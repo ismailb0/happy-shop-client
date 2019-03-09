@@ -4,9 +4,11 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import Collapse from '@material-ui/core/Collapse';
+import Typography from '@material-ui/core/Typography';
 import ExpandLess from '@material-ui/icons/ExpandLess';
 import ExpandMore from '@material-ui/icons/ExpandMore';
 
+import './CategoryList.css';
 
 const MENU = {
   'Makeup': {
@@ -88,29 +90,37 @@ class CategoryList extends Component {
 
   getCategoryList = (menuObject) => {
     return (
-      <List component="div" className='menuItemList'>
-        {
-          Object.keys(menuObject).map((item) => {
-            return (
-              <Fragment key={item}>
-                <ListItem key={item} button onClick={() => this.toggleItem(item)}>
-                  <ListItemText inset primary={item} />
-                  {this.state.opened.includes(item) ? <ExpandLess /> : <ExpandMore />}
-                </ListItem>
-                {Object.keys(menuObject[item]).length !== 0 && (
-                  <Collapse
-                    in={this.state.opened.includes(item)}
-                    timeout="auto"
-                    unmountOnExit
-                  >
-                    {this.getSubCategoryList(menuObject[item])}
-                  </Collapse>
-                )}
-              </Fragment>
-            )
-          })
-        }
-      </List>
+      <div>
+        <List disablePadding component="div" className='menu-item-list'>
+          {
+            Object.keys(menuObject).map((item) => {
+              return (
+                <Fragment key={item}>
+                  <ListItem key={item} button onClick={() => this.toggleItem(item)}>
+                    <ListItemText
+                      inset
+                      disableTypography
+                      primary={
+                        <div className='menu-item-text' >{item}</div>
+                      }
+                    />
+                    {this.state.opened.includes(item) ? <ExpandLess /> : <ExpandMore />}
+                  </ListItem>
+                  {Object.keys(menuObject[item]).length !== 0 && (
+                    <Collapse
+                      in={this.state.opened.includes(item)}
+                      timeout="auto"
+                      unmountOnExit
+                    >
+                      {this.getSubCategoryList(menuObject[item])}
+                    </Collapse>
+                  )}
+                </Fragment>
+              )
+            })
+          }
+        </List>
+      </div>
     )
   }
 
