@@ -28,17 +28,23 @@ const MENU = {
 
 class CategoryList extends Component {
   state = {
-    'isMakeupOpen': false,
-    'isCheekOpen': false,
-    'isFaceOpen': false,
-    'isEyesOpen': false,
-    'isLipsOpen': false,
-    'isNailsOpen': false
+    opened: [],
   };
 
-  openItem = (itemName) => {
+  toggleItem = (itemName) => {
+    const { opened } = this.state;
+
+    const currentIndex = opened.indexOf(itemName);
+    const newOpened = [...opened];
+
+    if (currentIndex === -1) {
+      newOpened.push(itemName);
+    } else {
+      newOpened.splice(currentIndex, 1);
+    }
+
     this.setState({
-      [`is${itemName}Open`]: !this.state[`is${itemName}Open`]
+      opened: newOpened,
     });
   }
 
@@ -64,12 +70,12 @@ class CategoryList extends Component {
           Object.keys(subCategoryList).map((item) => {
             return (
               <Fragment key={item}>
-                <ListItem key={item} button>
-                  <ListItemText inset primary={item} onClick={() => this.openItem(item)} />
-                  {subCategoryList[item].length !== 0 && (this.state[`is${item}Open`] ? <ExpandLess /> : <ExpandMore />)}
+                <ListItem key={item} button onClick={() => this.toggleItem(item)} >
+                  <ListItemText inset primary={item}/>
+                  {subCategoryList[item].length !== 0 && (this.state.opened.includes(item) ? <ExpandLess /> : <ExpandMore />)}
                 </ListItem>
                 {subCategoryList[item].length !== 0 && (
-                  <Collapse in={this.state[`is${item}Open`]} timeout="auto" unmountOnExit>
+                  <Collapse in={this.state.opened.includes(item)} timeout="auto" unmountOnExit>
                     {this.getSubSubCategoryList(subCategoryList[item])}
                   </Collapse>
                 )}
@@ -82,18 +88,18 @@ class CategoryList extends Component {
 
   getCategoryList = (menuObject) => {
     return (
-      <List component="nav">
+      <List component="div" className='menuItemList'>
         {
           Object.keys(menuObject).map((item) => {
             return (
               <Fragment key={item}>
-                <ListItem key={item} button>
-                  <ListItemText inset primary={item} onClick={() => this.openItem(item)} />
-                  {this.state[`is${item}Open`] ? <ExpandLess /> : <ExpandMore />}
+                <ListItem key={item} button onClick={() => this.toggleItem(item)}>
+                  <ListItemText inset primary={item} />
+                  {this.state.opened.includes(item) ? <ExpandLess /> : <ExpandMore />}
                 </ListItem>
                 {Object.keys(menuObject[item]).length !== 0 && (
                   <Collapse
-                    in={this.state[`is${item}Open`]}
+                    in={this.state.opened.includes(item)}
                     timeout="auto"
                     unmountOnExit
                   >
