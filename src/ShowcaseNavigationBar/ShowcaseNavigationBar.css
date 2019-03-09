@@ -1,4 +1,6 @@
 .showcase-navigation {
   display: flex;
+  height: 10%;
   padding: 1% 5%;
+  width: 100%;
 }

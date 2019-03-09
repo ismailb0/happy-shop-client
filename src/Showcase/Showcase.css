@@ -1,0 +1,6 @@
+.showcase {
+    display: block;
+    overflow-y: auto;
+    position: relative;
+    width: 100%;
+}

@@ -1,0 +1,16 @@
+.product-showcase-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 3%;
+  width: 100%;
+}
+
+.product-showcase-row {
+  display: flex;
+  margin: 2vh 0;
+  height: 45%;
+  width: 96%;
+}

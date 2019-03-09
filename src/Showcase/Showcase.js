@@ -1,16 +1,17 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 
 import ShowcaseNavigationBar from '../ShowcaseNavigationBar';
 import ProductShowcase from '../ProductShowcase';
+import './Showcase.css';
 
 class Showcase extends Component {
 
   render() {
     return (
-      <Fragment>
+      <div className="showcase">
         <ShowcaseNavigationBar />
         <ProductShowcase />
-      </Fragment>
+      </div>
     );
   }
 }
