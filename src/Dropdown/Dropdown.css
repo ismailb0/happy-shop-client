@@ -1,0 +1,9 @@
+.label-dropdown-wrapper {
+  align-items: center;
+  display: flex;
+  margin: 0 20px;
+}
+
+.label {
+  margin: 0 5px;
+}
