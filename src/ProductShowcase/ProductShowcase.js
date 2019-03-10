@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 
 import ProductCard from '../ProductCard';
 import './ProductShowcase.css';
@@ -31,14 +32,16 @@ class ProductShowcase extends Component {
           {
             productRow.map((product) => {
               return (
-                <ProductCard
-                  key={product.productName}
-                  image={reptile}
-                  title={product.title}
-                  productBrand={product.productBrand}
-                  productName={product.productName}
-                  productPrice={product.productPrice}
-                />
+                <Link to={`/${product.id}`} className='product-card-link'>
+                  <ProductCard
+                    key={product.id}
+                    image={reptile}
+                    title={product.title}
+                    productBrand={product.productBrand}
+                    productName={product.productName}
+                    productPrice={product.productPrice}
+                  />
+                </Link>
               );
             })
           }

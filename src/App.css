@@ -5,16 +5,3 @@
   overflow-x: hidden;
   text-align: center;
 }
-
-.Menu {
-  height: 100%;
-  position: fixed;
-  width: 25%;
-}
-
-.Products {
-  height: 100%;
-  left: 25%;
-  position: absolute;
-  width: 75%;
-}

@@ -1,22 +1,23 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import './App.css';
-import Menu from './Menu';
-import Showcase from './Showcase';
+import ProductSelectionPage from './ProductSelectionPage';
+import ProductPage from './ProductPage';
 
 
 class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <div className="Menu">
-          <Menu />
+      <Router>
+        <div className="App">
+          <Switch>
+            <Route exact path={'/'} component={ProductSelectionPage} />
+            <Route path={'/:id'} component={ProductPage} />
+          </Switch>
         </div>
-        <div className="Products">
-          <Showcase />
-        </div>
-      </div>
+      </Router>
     );
   }
 }
