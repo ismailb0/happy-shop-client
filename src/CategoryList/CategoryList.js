@@ -91,7 +91,7 @@ class CategoryList extends Component {
   getCategoryList = (menuObject) => {
     return (
       <div>
-        <List disablePadding component="div" className='menu-item-list'>
+        <List component="div">
           {
             Object.keys(menuObject).map((item) => {
               return (

@@ -1,16 +1,18 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 
 import CategoryList from '../CategoryList';
 import PriceCategoryList from '../PriceCategoryList';
+
+import './Menu.css';
 
 class Menu extends Component {
 
   render() {
     return (
-      <Fragment>
+      <div className='menu-item-list'>
         <CategoryList />
         <PriceCategoryList />
-      </Fragment>
+      </div>
     );
   }
 }

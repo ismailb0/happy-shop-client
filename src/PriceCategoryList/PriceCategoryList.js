@@ -71,7 +71,12 @@ class PriceCategoryList extends React.Component {
     return (
       <List component="div">
         <ListItem button onClick={() => this.openList()}>
-          <ListItemText inset primary='Price' />
+          <ListItemText
+            inset
+            primary={
+              <div className='menu-item-text' >Price</div>
+            }
+          />
           {this.state.opened ? <ExpandLess /> : <ExpandMore />}
         </ListItem>
         <Collapse
@@ -80,7 +85,14 @@ class PriceCategoryList extends React.Component {
           unmountOnExit
         >
           {RANGES.map(range => (
-            <ListItem key={range.start_price} role={undefined} dense button onClick={this.handleToggle(range)}>
+            <ListItem
+              key={range.start_price}
+              disablePadding
+              role={undefined}
+              dense
+              button
+              onClick={this.handleToggle(range)}
+            >
               <Checkbox
                 checked={this.state.checked.indexOf(range) !== -1}
                 tabIndex={-1}
