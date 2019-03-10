@@ -13,7 +13,7 @@ class ProductCard extends Component {
         <CardMedia
           className="card-media"
           image={this.props.image}
-          title="Contemplative Reptile"
+          title={this.props.title}
         />
         <div className="card-content">
           <div className='product-brand'>

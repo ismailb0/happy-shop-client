@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 import ProductCard from '../ProductCard';
 import './ProductShowcase.css';
-import reptile from './static/contemplative-reptile.jpg';
 import { PRODUCTS } from '../constants.js'
 
 class ProductShowcase extends Component {
@@ -32,10 +31,16 @@ class ProductShowcase extends Component {
           {
             productRow.map((product) => {
               return (
-                <Link to={`/${product.id}`} className='product-card-link'>
+                <Link
+                  to={{
+                    pathname: `/${product.id}`,
+                    state: { product }
+                  }}
+                  className='product-card-link'
+                >
                   <ProductCard
                     key={product.id}
-                    image={reptile}
+                    image={product.image}
                     title={product.title}
                     productBrand={product.productBrand}
                     productName={product.productName}

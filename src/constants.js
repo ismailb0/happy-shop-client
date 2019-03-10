@@ -1,80 +1,103 @@
+import reptile from './static/contemplative-reptile.jpg';
+
 export const PRODUCTS = [
   {
-
     id: 12345,
     title: "Contemplative Reptile",
+    image: reptile,
     productBrand: "KAT VON D",
     productName: "Lock-it Foundation",
-    productPrice: 56.00
+    productPrice: 56.00,
+    productDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
   },
   {
     id: 45678,
     title: "Contemplative Reptile",
+    image: reptile,
     productBrand: "MAKE UP FOR EVER",
     productName: "Ultra HD Foundation",
-    productPrice: 72.00
+    productPrice: 72.00,
+    productDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
   },
   {
     id: 12345,
     title: "Contemplative Reptile",
+    image: reptile,
     productBrand: "COVER FX",
     productName: "Custom Cover Drops",
-    productPrice: 68.00
+    productPrice: 68.00,
+    productDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
   },
   {
     id: 12345,
     title: "Contemplative Reptile",
+    image: reptile,
     productBrand: "KAT VON D",
     productName: "Lock-it Foundation",
-    productPrice: 56.00
+    productPrice: 56.00,
+    productDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
   },
   {
     id: 12345,
     title: "Contemplative Reptile",
+    image: reptile,
     productBrand: "MAKE UP FOR EVER",
     productName: "Ultra HD Foundation",
-    productPrice: 72.00
+    productPrice: 72.00,
+    productDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
   },
   {
     id: 12345,
     title: "Contemplative Reptile",
+    image: reptile,
     productBrand: "COVER FX",
     productName: "Custom Cover Drops",
-    productPrice: 68.00
+    productPrice: 68.00,
+    productDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
   },
   {
     id: 12345,
     title: "Contemplative Reptile",
+    image: reptile,
     productBrand: "KAT VON D",
     productName: "Lock-it Foundation",
-    productPrice: 56.00
+    productPrice: 56.00,
+    productDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
   },
   {
     id: 12345,
     title: "Contemplative Reptile",
+    image: reptile,
     productBrand: "KAT VON D",
     productName: "Lock-it Foundation",
-    productPrice: 56.00
+    productPrice: 56.00,
+    productDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
   },
   {
     id: 12345,
     title: "Contemplative Reptile",
+    image: reptile,
     productBrand: "MAKE UP FOR EVER",
     productName: "Ultra HD Foundation",
-    productPrice: 72.00
+    productPrice: 72.00,
+    productDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
   },
   {
     id: 12345,
     title: "Contemplative Reptile",
+    image: reptile,
     productBrand: "COVER FX",
     productName: "Custom Cover Drops",
-    productPrice: 68.00
+    productPrice: 68.00,
+    productDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
   },
   {
     id: 12345,
     title: "Contemplative Reptile",
+    image: reptile,
     productBrand: "MAKE UP FOR EVER",
     productName: "Ultra HD Foundation",
-    productPrice: 72.00
+    productPrice: 72.00,
+    productDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
   },
 ];
