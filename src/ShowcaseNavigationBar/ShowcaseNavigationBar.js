@@ -38,11 +38,13 @@ PAGINATION_CHOICES = [
           inputLabel="Sort By"
           defaultItem={this.SORT_CHOICES[0]}
           items={this.SORT_CHOICES}
+          handleChange={this.props.handleSortChange}
         />
         <Dropdown
           inputLabel="View"
           defaultItem={this.PAGINATION_CHOICES[0]}
           items={this.PAGINATION_CHOICES}
+          handleChange={this.props.handleResultsPerPageChange}
         />
       </div>
     );

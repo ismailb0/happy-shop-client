@@ -17,13 +17,13 @@ class ProductCard extends Component {
         />
         <div className="card-content">
           <div className='product-brand'>
-            {this.props.productBrand}
+            {this.props.brand}
           </div>
           <div>
-            {this.props.productName}
+            {this.props.name}
           </div>
           <div className='product-price'>
-            {`$${this.props.productPrice}`}
+            {`$${this.props.price}`}
           </div>
         </div>
       </Card>

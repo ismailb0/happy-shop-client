@@ -20,8 +20,9 @@ class Dropdown extends React.Component {
     });
   }
 
-  handleChange = event => {
+  handleSelectChange = event => {
     this.setState({ [event.target.name]: event.target.value });
+    this.props.handleChange(event.target.value)
   };
 
   getDropdownItems = () => {
@@ -49,7 +50,7 @@ class Dropdown extends React.Component {
             </InputLabel>
             <Select
               value={this.state.value}
-              onChange={this.handleChange}
+              onChange={this.handleSelectChange}
               input={
                 <OutlinedInput
                   labelWidth={this.state.labelWidth}

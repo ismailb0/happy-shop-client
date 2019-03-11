@@ -25,16 +25,16 @@ function ProductPage({ match, location }) {
         />
         <div className="card-page-content">
           <div className='product-brand'>
-            {product.productBrand}
+            {product.brand}
           </div>
           <div>
-            {product.productName}
+            {product.name}
           </div>
           <div className='product-price'>
-            {`$${product.productPrice}`}
+            {`$${product.price}`}
           </div>
           <div>
-            {product.productDescription}
+            {product.description}
           </div>
         </div>
       </Card>

@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 import ProductCard from '../ProductCard';
 import './ProductShowcase.css';
-import { PRODUCTS } from '../constants.js'
 
 class ProductShowcase extends Component {
 
@@ -12,10 +11,9 @@ class ProductShowcase extends Component {
     let startIndex = 0;
     let endIndex = 3;
 
-    while (endIndex < PRODUCTS.length + 3) {
-      const endSlice = (PRODUCTS.length - startIndex) < 3 ?  PRODUCTS.length : endIndex;
-      // productRow.push(PRODUCTS.slice(startIndex, endSlice))
-      const productRow = Array.prototype.slice.call(PRODUCTS, startIndex, endSlice)
+    while (endIndex < this.props.products.length + 3) {
+      const endSlice = (this.props.products.length - startIndex) < 3 ?  this.props.products.length : endIndex;
+      const productRow = Array.prototype.slice.call(this.props.products, startIndex, endSlice)
       productRows.push(productRow)
       startIndex += 3;
       endIndex += 3;
@@ -42,9 +40,9 @@ class ProductShowcase extends Component {
                     key={product.id}
                     image={product.image}
                     title={product.title}
-                    productBrand={product.productBrand}
-                    productName={product.productName}
-                    productPrice={product.productPrice}
+                    brand={product.brand}
+                    name={product.name}
+                    price={product.price}
                   />
                 </Link>
               );
