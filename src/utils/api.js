@@ -10,7 +10,7 @@ export const getProducts = (
   pagination,
   page,
   results_per_page,
-  sorted
+  sortedBy
 ) => {
   const params = {};
 
@@ -38,8 +38,8 @@ export const getProducts = (
   if (results_per_page) {
     params.results_per_page = results_per_page
   }
-  if (sorted) {
-    params.sorted = sorted
+  if (sortedBy) {
+    params.sorted = sortedBy
   }
 
   const url = new URI('https://happy-shop-isb-api.herokuapp.com/application/products');

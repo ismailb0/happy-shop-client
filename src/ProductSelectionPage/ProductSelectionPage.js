@@ -17,78 +17,43 @@ class ProductSelectionPage extends Component {
     pagination: true,
     page: 1,
     resultsPerPage: 10,
-    sorted: false,
+    sortedBy: "best_selling",
     products: []
   }
 
   componentDidMount() {
-    this.fetchData(
-      this.state.startPrice,
-      this.state.endPrice,
-      this.state.category,
-      this.state.subcategory,
-      this.state.subsubcategory,
-      this.state.pagination,
-      this.state.page,
-      this.state.resultsPerPage,
-      this.state.sorted
-    );
+    this.fetchData(this.state);
   }
 
-  handleSortChange = (sorted) => {
-    const isSortedByPrice = sorted === 'price';
+  handleSortChange = (sortedBy) => {
     this.setState({
-      sorted: isSortedByPrice
+      sorted: sortedBy
     });
-    this.fetchData(
-      this.state.startPrice,
-      this.state.endPrice,
-      this.state.category,
-      this.state.subcategory,
-      this.state.subsubcategory,
-      this.state.pagination,
-      this.state.page,
-      this.state.resultsPerPage,
-      isSortedByPrice
-    );
+    this.fetchData({
+      ...this.state,
+      sortedBy
+    });
   }
 
   handleResultsPerPageChange = (resultsPerPage) => {
     this.setState({ resultsPerPage });
-    this.fetchData(
-      this.state.startPrice,
-      this.state.endPrice,
-      this.state.category,
-      this.state.subcategory,
-      this.state.subsubcategory,
-      this.state.pagination,
-      this.state.page,
-      resultsPerPage,
-      this.state.sorted
-    );
+    this.fetchData({
+      ...this.state,
+      resultsPerPage
+    });
   }
 
-  fetchData = (
-    startPrice,
-    endPrice,
-    category,
-    subcategory,
-    subsubcategory,
-    pagination,
-    page,
-    resultsPerPage,
-    sorted
-  ) => {
+  fetchData = (parameters) => {
     getProducts(
-      startPrice,
-      endPrice,
-      category,
-      subcategory,
-      subsubcategory,
-      pagination,
-      page,
-      resultsPerPage,
-      sorted
+      parameters.startPrice,
+      parameters.endPrice,
+      parameters.category,
+      parameters.subcategory,
+      parameters.subsubcategory,
+      parameters.pagination,
+      parameters.page,
+      parameters.resultsPerPage,
+      parameters.sortedBy
     )
     .then(products => {
       if (products) {
