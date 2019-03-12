@@ -25,11 +25,12 @@ class ProductShowcase extends Component {
     const productRows = this.getProductRows()
     return productRows.map((productRow) => {
       return (
-        <div className='product-showcase-row'>
+        <div key={productRow[0].id} className='product-showcase-row'>
           {
             productRow.map((product) => {
               return (
                 <Link
+                  key={product.id}
                   to={{
                     pathname: `/${product.id}`,
                     state: { product }

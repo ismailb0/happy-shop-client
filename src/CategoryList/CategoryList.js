@@ -9,82 +9,203 @@ import ExpandMore from '@material-ui/icons/ExpandMore';
 
 import './CategoryList.css';
 
-const MENU = {
-  'Makeup': {
-    'Cheek': [],
-    'Face': [
-      'Contouring',
-      'Primer',
-      'Tools',
-      'Foundation',
-      'Face Powder',
-      'Cc & Bb Cream',
-      'Concealer',
-    ],
-    'Eyes': [],
-    'Lips': [],
-    'Nails': [],
-  }
-};
-
 class CategoryList extends Component {
+
   state = {
-    opened: [],
-  };
+    categories: [
+      {
+        name: 'Makeup',
+        isOpen: false,
+        subCategories: [
+          {
+            name: 'Face',
+            isOpen: false,
+            subCategories: [
+              {
+                name: 'Foundation',
+                isOpen: false,
+                subCategories: []
+              },
+              {
+                name: 'Contour',
+                isOpen: false,
+                subCategories: []
+              },
+              {
+                name: 'Blush',
+                isOpen: false,
+                subCategories: []
+              },
+              {
+                name: 'Bronzer',
+                isOpen: false,
+                subCategories: []
+              },
+              {
+                name: 'Powder',
+                isOpen: false,
+                subCategories: []
+              },
+            ]
+          },
+          {
+            name: 'Eyes',
+            isOpen: false,
+            subCategories: [
+              {
+                name: 'Eye Liner',
+                isOpen: false,
+                subCategories: []
+              },
+              {
+                name: 'Eye Shadow',
+                isOpen: false,
+                subCategories: []
+              },
+              {
+                name: 'Eyebrows',
+                isOpen: false,
+                subCategories: []
+              },
+              {
+                name: 'Mascare',
+                isOpen: false,
+                subCategories: []
+              },
+              {
+                name: 'Eye Primer',
+                isOpen: false,
+                subCategories: []
+              },
+            ]
+          },
+          {
+            name: 'Lips',
+            isOpen: false,
+            subCategories: [
+              {
+                name: 'Lipstick',
+                isOpen: false,
+                subCategories: []
+              },
+              {
+                name: 'Lip Gloss',
+                isOpen: false,
+                subCategories: []
+              },
+              {
+                name: 'Lip Liner',
+                isOpen: false,
+                subCategories: []
+              },
+              {
+                name: 'Lip Balm',
+                isOpen: false,
+                subCategories: []
+              },
+              {
+                name: 'Lip Primer',
+                isOpen: false,
+                subCategories: []
+              },
+            ]
+          },
+          {
+            name: 'Nails',
+            isOpen: false,
+            subCategories: [
+              {
+                name: 'Nail Polish',
+                isOpen: false,
+                subCategories: []
+              },
+              {
+                name: 'Nail Art',
+                isOpen: false,
+                subCategories: []
+              },
+              {
+                name: 'Nail Sets',
+                isOpen: false,
+                subCategories: []
+              },
+              {
+                name: 'Nail Treatments',
+                isOpen: false,
+                subCategories: []
+              },
+              {
+                name: 'Base & Top Coat',
+                isOpen: false,
+                subCategories: []
+              },
+            ]
+          },
+        ]
+      }
+    ]
+  }
 
-  toggleItem = (itemName) => {
-    const { opened } = this.state;
+  closeAllSubCategories = (category) => {
+    const updatedCategories = this.state.categories
+    const updatedCategory = category
 
-    const currentIndex = opened.indexOf(itemName);
-    const newOpened = [...opened];
+    updatedCategory.isOpen = false
+    updatedCategory.subCategories.forEach((element, index) => {
+      element.isOpen = false
+    })
 
-    if (currentIndex === -1) {
-      newOpened.push(itemName);
-    } else {
-      newOpened.splice(currentIndex, 1);
-    }
+    const categoryIndex = this.state.categories.findIndex(cat => cat.name === category.name);
+
+    updatedCategories[categoryIndex] = updatedCategory
 
     this.setState({
-      opened: newOpened,
+      categories: updatedCategories,
     });
   }
 
-  getSubSubCategoryList = (subSubCategoryList) => {
-    return (
-      <List component="div" disablePadding>
-        {
-          subSubCategoryList.map((item) => {
-            return (
-              <ListItem key={item} button>
-                <ListItemText inset primary={item} />
-              </ListItem>
-          )})
+  toggleSingleCategory = (itemName, category) => {
+    const updatedCategories = this.state.categories
+    const updatedCategory = category
+
+    if (category.name === itemName) {
+      updatedCategory.isOpen = !updatedCategory.isOpen
+    } else {
+      category.subCategories.forEach((element, index) => {
+        if (element.name === itemName) {
+          const subCategoryIndex = category.subCategories.findIndex(cat => cat.name === itemName)
+          updatedCategory.subCategories[subCategoryIndex].isOpen = !element.isOpen
         }
-      </List>
-    )
+      })
+    }
+
+    const categoryIndex = this.state.categories.findIndex(cat => cat.name === category.name);
+
+    updatedCategories[categoryIndex] = updatedCategory
+
+    this.setState({
+      categories: updatedCategories,
+    });
   }
 
-  getSubCategoryList = (subCategoryList) => {
-    return (
-      <List component="div" disablePadding>
-        {
-          Object.keys(subCategoryList).map((item) => {
-            return (
-              <Fragment key={item}>
-                <ListItem key={item} button onClick={() => this.toggleItem(item)} >
-                  <ListItemText inset primary={item}/>
-                  {subCategoryList[item].length !== 0 && (this.state.opened.includes(item) ? <ExpandLess /> : <ExpandMore />)}
-                </ListItem>
-                {subCategoryList[item].length !== 0 && (
-                  <Collapse in={this.state.opened.includes(item)} timeout="auto" unmountOnExit>
-                    {this.getSubSubCategoryList(subCategoryList[item])}
-                  </Collapse>
-                )}
-              </Fragment>
-          )})
-        }
-      </List>
-    )
+  toggleItem = (itemName) => {
+    const categories = this.state.categories;
+
+    const parentItem = categories.find((category) => {
+      const isItemNameInParentCategory = category.name === itemName;
+      const isItemNameInChildCategory = category.subCategories.find((subcategory) => {
+          return (subcategory.name === itemName);
+      }) !== undefined;
+      return isItemNameInParentCategory || isItemNameInChildCategory
+    }, null)
+
+    if (parentItem !== null) {
+      if (itemName === parentItem.name && parentItem.isOpen === true) {
+        this.closeAllSubCategories(parentItem)
+      } else {
+        this.toggleSingleCategory(itemName, parentItem)
+      }
+    }
   }
 
   getCategoryList = (menuObject) => {
@@ -92,26 +213,31 @@ class CategoryList extends Component {
       <div>
         <List component="div">
           {
-            Object.keys(menuObject).map((item) => {
+            menuObject.map((item) => {
               return (
-                <Fragment key={item}>
-                  <ListItem key={item} button onClick={() => this.toggleItem(item)}>
+                <Fragment key={item.name}>
+                  <ListItem key={item.name} button onClick={() => {
+                      item.subCategories.length !== 0 && this.toggleItem(item.name)
+                    }
+                  }>
                     <ListItemText
                       inset
                       disableTypography
                       primary={
-                        <div className='menu-item-text' >{item}</div>
+                        <div className='menu-item-text' >{item.name}</div>
                       }
                     />
-                    {this.state.opened.includes(item) ? <ExpandLess /> : <ExpandMore />}
+                    {item.subCategories.length !== 0 && (
+                      item.isOpen ? <ExpandLess /> : <ExpandMore />
+                    )}
                   </ListItem>
-                  {Object.keys(menuObject[item]).length !== 0 && (
+                  {item.subCategories.length !== 0 && (
                     <Collapse
-                      in={this.state.opened.includes(item)}
+                      in={item.isOpen}
                       timeout="auto"
                       unmountOnExit
                     >
-                      {this.getSubCategoryList(menuObject[item])}
+                      {this.getCategoryList(item.subCategories)}
                     </Collapse>
                   )}
                 </Fragment>
@@ -124,7 +250,7 @@ class CategoryList extends Component {
   }
 
   render() {
-    return this.getCategoryList(MENU);
+    return this.getCategoryList(this.state.categories);
   }
 }
 
