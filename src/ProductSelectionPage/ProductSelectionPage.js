@@ -35,6 +35,48 @@ class ProductSelectionPage extends Component {
     });
   }
 
+  handleCategoryChange = (category) => {
+    this.setState({
+      category,
+      subcategory: null,
+      subsubcategory: null,
+    });
+    this.fetchData({
+      ...this.state,
+      category,
+      subcategory: null,
+      subsubcategory: null,
+    });
+  }
+
+  handleSubCategoryChange = (subcategory) => {
+    this.setState({
+      category: null,
+      subcategory,
+      subsubcategory: null,
+    });
+    this.fetchData({
+      ...this.state,
+      category: null,
+      subcategory,
+      subsubcategory: null,
+    });
+  }
+
+  handleSubSubCategoryChange = (subsubcategory) => {
+    this.setState({
+      category: null,
+      subcategory: null,
+      subsubcategory,
+    });
+    this.fetchData({
+      ...this.state,
+      category: null,
+      subcategory: null,
+      subsubcategory,
+    });
+  }
+
   handleResultsPerPageChange = (resultsPerPage) => {
     this.setState({ resultsPerPage });
     this.fetchData({
@@ -70,7 +112,11 @@ class ProductSelectionPage extends Component {
     return (
       <div>
         <div className="menu">
-          <Menu />
+          <Menu
+            handleCategoryChange={this.handleCategoryChange}
+            handleSubCategoryChange={this.handleSubCategoryChange}
+            handleSubSubCategoryChange={this.handleSubSubCategoryChange}
+          />
         </div>
         <div className="product-selection-showcase">
           <Showcase

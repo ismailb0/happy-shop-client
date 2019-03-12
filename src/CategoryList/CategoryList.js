@@ -162,6 +162,7 @@ class CategoryList extends Component {
     this.setState({
       categories: updatedCategories,
     });
+    this.props.handleCategoryChange(category.name)
   }
 
   toggleSingleCategory = (itemName, category) => {
@@ -170,6 +171,7 @@ class CategoryList extends Component {
 
     if (category.name === itemName) {
       updatedCategory.isOpen = !updatedCategory.isOpen
+      this.props.handleCategoryChange(itemName)
     } else {
       category.subCategories.forEach((element, index) => {
         if (element.name === itemName) {
@@ -177,6 +179,7 @@ class CategoryList extends Component {
           updatedCategory.subCategories[subCategoryIndex].isOpen = !element.isOpen
         }
       })
+      this.props.handleSubCategoryChange(itemName)
     }
 
     const categoryIndex = this.state.categories.findIndex(cat => cat.name === category.name);
@@ -186,6 +189,14 @@ class CategoryList extends Component {
     this.setState({
       categories: updatedCategories,
     });
+  }
+
+  handleItemSelection = (item) => {
+    if (item.subCategories.length !== 0) {
+        this.toggleItem(item.name)
+    } else {
+      this.props.handleSubSubCategoryChange(item.name)
+    }
   }
 
   toggleItem = (itemName) => {
@@ -216,10 +227,7 @@ class CategoryList extends Component {
             menuObject.map((item) => {
               return (
                 <Fragment key={item.name}>
-                  <ListItem key={item.name} button onClick={() => {
-                      item.subCategories.length !== 0 && this.toggleItem(item.name)
-                    }
-                  }>
+                  <ListItem key={item.name} button onClick={() => this.handleItemSelection(item)}>
                     <ListItemText
                       inset
                       disableTypography

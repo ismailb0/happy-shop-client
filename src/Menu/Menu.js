@@ -10,7 +10,11 @@ class Menu extends Component {
   render() {
     return (
       <div className='menu-item-list'>
-        <CategoryList />
+        <CategoryList
+          handleCategoryChange={this.props.handleCategoryChange}
+          handleSubCategoryChange={this.props.handleSubCategoryChange}
+          handleSubSubCategoryChange={this.props.handleSubSubCategoryChange}
+        />
         <PriceCategoryList />
       </div>
     );
