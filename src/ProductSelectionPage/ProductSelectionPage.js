@@ -18,7 +18,8 @@ class ProductSelectionPage extends Component {
     page: 1,
     resultsPerPage: 10,
     sortedBy: "best_selling",
-    products: []
+    products: [],
+    priceRanges: [],
   }
 
   componentDidMount() {
@@ -99,7 +100,20 @@ class ProductSelectionPage extends Component {
     )
     .then(products => {
       if (products) {
-        this.setState({ products });
+        let filteredProducts = products
+        if (this.state.startPrice !== null && this.state.endPrice !== null) {
+          filteredProducts = filteredProducts.filter((product) => {
+            let shouldProductBeKept = false;
+            this.state.priceRanges.forEach((priceRange) => {
+              if (product.price >= priceRange.startPrice && product.price <= priceRange.endPrice) {
+                shouldProductBeKept = true
+              }
+            })
+            return shouldProductBeKept
+          })
+        }
+
+        this.setState({ products: filteredProducts });
       }
     })
     .catch(error => {
@@ -108,11 +122,21 @@ class ProductSelectionPage extends Component {
     })
   };
 
+  handlePriceRangeChange = (startPrice, endPrice, priceRanges) => {
+    this.setState({ startPrice, endPrice, priceRanges });
+    this.fetchData({
+      ...this.state,
+      startPrice,
+      endPrice,
+    });
+  }
+
   render() {
     return (
       <div>
         <div className="menu">
           <Menu
+            handlePriceRangeChange={this.handlePriceRangeChange}
             handleCategoryChange={this.handleCategoryChange}
             handleSubCategoryChange={this.handleSubCategoryChange}
             handleSubSubCategoryChange={this.handleSubSubCategoryChange}

@@ -15,7 +15,9 @@ class Menu extends Component {
           handleSubCategoryChange={this.props.handleSubCategoryChange}
           handleSubSubCategoryChange={this.props.handleSubSubCategoryChange}
         />
-        <PriceCategoryList />
+        <PriceCategoryList
+          handlePriceRangeChange={this.props.handlePriceRangeChange}
+        />
       </div>
     );
   }

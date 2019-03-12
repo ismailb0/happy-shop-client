@@ -11,36 +11,36 @@ import './PriceCategoryList.css';
 
 const RANGES = [
   {
-    start_price: 0,
-    end_price: 25,
-    label: 'Under 25$',
+    startPrice: 0,
+    endPrice: 100,
+    label: 'Under 100$',
   },
   {
-    start_price: 25,
-    end_price: 50
+    startPrice: 100,
+    endPrice: 500
   },
   {
-    start_price: 50,
-    end_price: 100
+    startPrice: 500,
+    endPrice: 680
   },
   {
-    start_price: 100,
-    end_price: 150
+    startPrice: 680,
+    endPrice: 720
   },
   {
-    start_price: 150,
-    end_price: 300,
+    startPrice: 720,
+    endPrice: 900,
   },
   {
-    start_price: 300,
-    end_price: 1000000000,
-    label: 'Above 300$',
+    startPrice: 900,
+    endPrice: 1000000000,
+    label: 'Above 900',
   },
 ]
 
 class PriceCategoryList extends React.Component {
   state = {
-    checked: [0],
+    checked: [],
     opened: false
   };
 
@@ -50,7 +50,22 @@ class PriceCategoryList extends React.Component {
     })
   }
 
-  handleToggle = value => () => {
+  updateProducts = (checkedPriceRanges) => {
+    let minPrice = Math.min.apply(Math, checkedPriceRanges.map((priceRange) => priceRange.startPrice));
+    let maxPrice = Math.max.apply(Math, checkedPriceRanges.map((priceRange) => priceRange.endPrice));
+
+    if(minPrice === Infinity) {
+      minPrice = null
+    }
+    if(maxPrice === -Infinity) {
+      maxPrice = null
+    }
+
+    this.props.handlePriceRangeChange(minPrice, maxPrice, checkedPriceRanges)
+  }
+
+  handleClick = value => () => {
+    console.log(value, "range")
     const { checked } = this.state;
     const currentIndex = checked.indexOf(value);
     const newChecked = [...checked];
@@ -64,6 +79,7 @@ class PriceCategoryList extends React.Component {
     this.setState({
       checked: newChecked,
     });
+    this.updateProducts(newChecked)
   };
 
   render() {
@@ -86,12 +102,12 @@ class PriceCategoryList extends React.Component {
         >
           {RANGES.map(range => (
             <ListItem
-              key={range.start_price}
+              key={range.startPrice}
               disablePadding
               role={undefined}
               dense
               button
-              onClick={this.handleToggle(range)}
+              onClick={this.handleClick(range)}
             >
               <Checkbox
                 checked={this.state.checked.indexOf(range) !== -1}
@@ -101,7 +117,7 @@ class PriceCategoryList extends React.Component {
               <ListItemText
                 primary={range.label
                   ? range.label
-                  :`${range.start_price}$ - ${range.end_price}$`
+                  :`${range.startPrice}$ - ${range.endPrice}$`
               } />
             </ListItem>
           ))}
