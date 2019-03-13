@@ -13,6 +13,7 @@ class Showcase extends Component {
           handlePageChange={this.props.handlePageChange}
           handleResultsPerPageChange={this.props.handleResultsPerPageChange}
           handleSortChange={this.props.handleSortChange}
+          sortedBy={this.props.sortedBy}
           resultsPerPage={this.props.resultsPerPage}
           totalNumberOfProducts={this.props.totalNumberOfProducts}
         />

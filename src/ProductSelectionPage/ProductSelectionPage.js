@@ -29,7 +29,7 @@ class ProductSelectionPage extends Component {
 
   handleSortChange = (sortedBy) => {
     this.setState({
-      sorted: sortedBy
+      sortedBy
     });
     this.fetchData({
       ...this.state,
@@ -160,6 +160,7 @@ class ProductSelectionPage extends Component {
             handleSortChange={this.handleSortChange}
             products={this.state.products}
             totalNumberOfProducts={this.state.count}
+            sortedBy={this.state.sortedBy}
             resultsPerPage={this.state.resultsPerPage}
           />
         </div>

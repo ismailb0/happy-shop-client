@@ -32,18 +32,26 @@ PAGINATION_CHOICES = [
   }
 ]
 
+  getCurrentSortOption = () => {
+    return this.SORT_CHOICES.find((sortOption) => sortOption.value === this.props.sortedBy)
+  }
+
+  getCurrentPaginationOption = () => {
+    return this.PAGINATION_CHOICES.find((paginationOption) => paginationOption.value === this.props.resultsPerPage)
+  }
+
   render() {
     return (
       <div className="showcase-navigation">
         <Dropdown
           inputLabel="Sort By"
-          defaultItem={this.SORT_CHOICES[0]}
+          defaultItem={this.getCurrentSortOption()}
           items={this.SORT_CHOICES}
           handleChange={this.props.handleSortChange}
         />
         <Dropdown
           inputLabel="View"
-          defaultItem={this.PAGINATION_CHOICES[0]}
+          defaultItem={this.getCurrentPaginationOption()}
           items={this.PAGINATION_CHOICES}
           handleChange={this.props.handleResultsPerPageChange}
         />
