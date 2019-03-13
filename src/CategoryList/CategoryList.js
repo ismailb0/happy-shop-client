@@ -7,7 +7,6 @@ import Collapse from '@material-ui/core/Collapse';
 import ExpandLess from '@material-ui/icons/ExpandLess';
 import ExpandMore from '@material-ui/icons/ExpandMore';
 
-import './CategoryList.css';
 
 class CategoryList extends Component {
 
@@ -227,12 +226,17 @@ class CategoryList extends Component {
             menuObject.map((item) => {
               return (
                 <Fragment key={item.name}>
-                  <ListItem key={item.name} button onClick={() => this.handleItemSelection(item)}>
+                  <ListItem
+                    key={item.name}
+                    button onClick={() => this.handleItemSelection(item)}
+                  >
                     <ListItemText
                       inset
                       disableTypography
                       primary={
-                        <div className='menu-item-text' >{item.name}</div>
+                        <div>
+                          {item.name}
+                        </div>
                       }
                     />
                     {item.subCategories.length !== 0 && (

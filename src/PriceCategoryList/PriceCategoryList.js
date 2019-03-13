@@ -1,13 +1,13 @@
 import React from 'react';
 import List from '@material-ui/core/List';
+import { withStyles } from "@material-ui/core/styles";
+
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import Checkbox from '@material-ui/core/Checkbox';
 import Collapse from '@material-ui/core/Collapse';
 import ExpandLess from '@material-ui/icons/ExpandLess';
 import ExpandMore from '@material-ui/icons/ExpandMore';
-
-import './PriceCategoryList.css';
 
 const RANGES = [
   {
@@ -37,6 +37,18 @@ const RANGES = [
     label: 'Above 900',
   },
 ]
+
+const styles = {
+  root: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    paddingLeft: 5,
+    paddingRight: 5,
+    paddingTop: 0,
+    paddingBottom: 0,
+  }
+};
+
 
 class PriceCategoryList extends React.Component {
   state = {
@@ -82,6 +94,7 @@ class PriceCategoryList extends React.Component {
   };
 
   render() {
+    const { classes } = this.props;
 
     return (
       <List component="div">
@@ -106,6 +119,7 @@ class PriceCategoryList extends React.Component {
               onClick={this.handleClick(range)}
             >
               <Checkbox
+                className={classes.root}
                 checked={this.state.checked.indexOf(range) !== -1}
                 tabIndex={-1}
                 disableRipple
@@ -123,4 +137,4 @@ class PriceCategoryList extends React.Component {
   }
 }
 
-export default PriceCategoryList;
+export default withStyles(styles)(PriceCategoryList);

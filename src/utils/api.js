@@ -48,8 +48,11 @@ export const getProducts = (
 
   return fetch(url)
     .then(response => response.json())
-    .then(products => {
-      return products
+    .then(response => {
+      return {
+        products: response["products"],
+        count: response["count"]
+      }
     }
     )
 };

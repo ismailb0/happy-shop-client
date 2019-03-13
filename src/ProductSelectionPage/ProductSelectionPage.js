@@ -20,6 +20,7 @@ class ProductSelectionPage extends Component {
     sortedBy: "best_selling",
     products: [],
     priceRanges: [],
+    count: 0
   }
 
   componentDidMount() {
@@ -98,7 +99,9 @@ class ProductSelectionPage extends Component {
       parameters.resultsPerPage,
       parameters.sortedBy
     )
-    .then(products => {
+    .then(response => {
+      const products = response.products
+      const count = response.count
       if (products) {
         let filteredProducts = products
         if (this.state.startPrice !== null && this.state.endPrice !== null) {
@@ -113,7 +116,7 @@ class ProductSelectionPage extends Component {
           })
         }
 
-        this.setState({ products: filteredProducts });
+        this.setState({ products: filteredProducts, count });
       }
     })
     .catch(error => {

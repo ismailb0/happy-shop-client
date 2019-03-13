@@ -32,7 +32,7 @@ class ProductShowcase extends Component {
                 <Link
                   key={product.id}
                   to={{
-                    pathname: `/${product.id}`,
+                    pathname: `/product/${product.id}`,
                     state: { product }
                   }}
                   className='product-card-link'
