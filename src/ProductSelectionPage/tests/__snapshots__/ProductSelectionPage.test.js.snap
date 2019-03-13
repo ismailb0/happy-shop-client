@@ -1,0 +1,312 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProductSelectionPage /> should match snapshot for ProductSelectionPage 1`] = `
+<div>
+  <div
+    className="menu"
+  >
+    <div
+      className="menu-item-list"
+    >
+      <div>
+        <div
+          className="MuiList-root-1 MuiList-padding-2"
+        >
+          <div
+            className="MuiButtonBase-root-17 MuiListItem-root-5 MuiListItem-default-8 MuiListItem-gutters-13 MuiListItem-button-14"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            role="button"
+            tabIndex="0"
+          >
+            <div
+              className="MuiListItemText-root-20 MuiListItemText-inset-21"
+            >
+              <div>
+                Makeup
+              </div>
+            </div>
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root-26"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+              />
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+            </svg>
+            <span
+              className="MuiTouchRipple-root-142"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="MuiList-root-1 MuiList-padding-2"
+      >
+        <div
+          className="MuiButtonBase-root-17 MuiListItem-root-5 MuiListItem-default-8 MuiListItem-gutters-13 MuiListItem-button-14"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onContextMenu={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          role="button"
+          tabIndex="0"
+        >
+          <div
+            className="MuiListItemText-root-20 MuiListItemText-inset-21"
+          >
+            <span
+              className="MuiTypography-root-40 MuiTypography-subheading-47 MuiListItemText-primary-23"
+            >
+              <div
+                className="menu-item-text"
+              >
+                Price
+              </div>
+            </span>
+          </div>
+          <svg
+            aria-hidden="true"
+            className="MuiSvgIcon-root-26"
+            focusable="false"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+            />
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+          </svg>
+          <span
+            className="MuiTouchRipple-root-142"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="product-selection-showcase"
+  >
+    <div
+      className="showcase"
+    >
+      <div
+        className="showcase-navigation"
+      >
+        <form
+          autoComplete="off"
+          className="form"
+        >
+          <div
+            className="MuiFormControl-root-77"
+          >
+            <div
+              className="label-dropdown-wrapper"
+            >
+              <div
+                className="label"
+              >
+                Sort By :
+              </div>
+              <label
+                className="MuiFormLabel-root-92 MuiFormLabel-filled-96 MuiInputLabel-root-81 MuiInputLabel-formControl-86 MuiInputLabel-animated-89 MuiInputLabel-shrink-88 MuiInputLabel-outlined-91"
+                data-shrink={true}
+                htmlFor="outlined-age-simple"
+              />
+              <div
+                className="MuiInputBase-root-119 MuiOutlinedInput-root-106 MuiInputBase-formControl-120 Dropdown-root-76"
+                onClick={[Function]}
+              >
+                <fieldset
+                  aria-hidden={true}
+                  className="MuiPrivateNotchedOutline-root-136 MuiOutlinedInput-notchedOutline-113"
+                  style={
+                    Object {
+                      "paddingLeft": 8,
+                    }
+                  }
+                >
+                  <legend
+                    className="MuiPrivateNotchedOutline-legend-137"
+                    style={
+                      Object {
+                        "width": 0,
+                      }
+                    }
+                  >
+                    <span
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "&#8203;",
+                        }
+                      }
+                    />
+                  </legend>
+                </fieldset>
+                <div
+                  className="MuiSelect-root-99"
+                >
+                  <div
+                    aria-haspopup="true"
+                    aria-pressed="false"
+                    className="MuiSelect-select-100 MuiSelect-selectMenu-103 MuiSelect-outlined-102 MuiInputBase-input-129 MuiOutlinedInput-input-114"
+                    id="select-value"
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    onKeyDown={[Function]}
+                    role="button"
+                    tabIndex={0}
+                  >
+                    Best Selling
+                  </div>
+                  <input
+                    id="outlined-age-simple"
+                    name="value"
+                    type="hidden"
+                    value="best_selling"
+                  />
+                  <svg
+                    aria-hidden="true"
+                    className="MuiSvgIcon-root-26 MuiSelect-icon-105"
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M7 10l5 5 5-5z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+        <form
+          autoComplete="off"
+          className="form"
+        >
+          <div
+            className="MuiFormControl-root-77"
+          >
+            <div
+              className="label-dropdown-wrapper"
+            >
+              <div
+                className="label"
+              >
+                View :
+              </div>
+              <label
+                className="MuiFormLabel-root-92 MuiFormLabel-filled-96 MuiInputLabel-root-81 MuiInputLabel-formControl-86 MuiInputLabel-animated-89 MuiInputLabel-shrink-88 MuiInputLabel-outlined-91"
+                data-shrink={true}
+                htmlFor="outlined-age-simple"
+              />
+              <div
+                className="MuiInputBase-root-119 MuiOutlinedInput-root-106 MuiInputBase-formControl-120 Dropdown-root-76"
+                onClick={[Function]}
+              >
+                <fieldset
+                  aria-hidden={true}
+                  className="MuiPrivateNotchedOutline-root-136 MuiOutlinedInput-notchedOutline-113"
+                  style={
+                    Object {
+                      "paddingLeft": 8,
+                    }
+                  }
+                >
+                  <legend
+                    className="MuiPrivateNotchedOutline-legend-137"
+                    style={
+                      Object {
+                        "width": 0,
+                      }
+                    }
+                  >
+                    <span
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "&#8203;",
+                        }
+                      }
+                    />
+                  </legend>
+                </fieldset>
+                <div
+                  className="MuiSelect-root-99"
+                >
+                  <div
+                    aria-haspopup="true"
+                    aria-pressed="false"
+                    className="MuiSelect-select-100 MuiSelect-selectMenu-103 MuiSelect-outlined-102 MuiInputBase-input-129 MuiOutlinedInput-input-114"
+                    id="select-value"
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    onKeyDown={[Function]}
+                    role="button"
+                    tabIndex={0}
+                  >
+                    10
+                  </div>
+                  <input
+                    id="outlined-age-simple"
+                    name="value"
+                    type="hidden"
+                    value={10}
+                  />
+                  <svg
+                    aria-hidden="true"
+                    className="MuiSvgIcon-root-26 MuiSelect-icon-105"
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M7 10l5 5 5-5z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div
+          className="pagination"
+        />
+      </div>
+      <div
+        className="product-showcase-wrapper"
+      />
+    </div>
+  </div>
+</div>
+`;
