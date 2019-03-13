@@ -10,8 +10,11 @@ class Showcase extends Component {
     return (
       <div className="showcase">
         <ShowcaseNavigationBar
+          handlePageChange={this.props.handlePageChange}
           handleResultsPerPageChange={this.props.handleResultsPerPageChange}
           handleSortChange={this.props.handleSortChange}
+          resultsPerPage={this.props.resultsPerPage}
+          totalNumberOfProducts={this.props.totalNumberOfProducts}
         />
         <ProductShowcase
           products={this.props.products}

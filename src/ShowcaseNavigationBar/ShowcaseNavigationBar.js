@@ -47,7 +47,11 @@ PAGINATION_CHOICES = [
           items={this.PAGINATION_CHOICES}
           handleChange={this.props.handleResultsPerPageChange}
         />
-        <Pagination />
+        <Pagination
+          handlePageChange={this.props.handlePageChange}
+          totalNumberOfProducts={this.props.totalNumberOfProducts}
+          resultsPerPage={this.props.resultsPerPage}
+        />
       </div>
     );
   }

@@ -5,16 +5,31 @@ import './Pagination.css';
 class Pagination extends Component {
 
   state = {
-      currentPage: 1,
-    };
+    currentPage: 1,
+    numbersToDisplay: [],
+    pageNumbers: []
+  };
+
+  componentWillReceiveProps(nextProps) {
+    const pageNumbers = this.getPageNumbers(nextProps.totalNumberOfProducts, nextProps.resultsPerPage)
+    this.updateNumbersToDisplay(pageNumbers, this.state.currentPage)
+  }
+
+  handleClick = (value) => {
+    this.props.handlePageChange(value)
+    this.setState({ currentPage: value }, () => this.updateNumbersToDisplay(
+      this.state.pageNumbers,
+      value
+    ));
+  }
 
   getNumber = (number) => {
     return (
       <div
-        className='number'
+        className={(number === this.state.currentPage) ? 'number selected' : 'number'}
         key={number}
         id={number}
-        onClick={this.handleClick}
+        onClick={(event) => this.handleClick(parseInt(event.target.id))}
       >
         {number}
       </div>
@@ -23,13 +38,13 @@ class Pagination extends Component {
 
   getNumberWithEllipsis = (number) => {
     return (
-      <Fragment>
+      <Fragment key={number}>
         <div className='number'>...</div>
         <div
-          className='number'
+          className={(number === this.state.currentPage) ? 'number selected' : 'number'}
           key={number}
           id={number}
-          onClick={this.handleClick}
+          onClick={(event) => this.handleClick(parseInt(event.target.id))}
         >
           {number}
         </div>
@@ -37,7 +52,7 @@ class Pagination extends Component {
     );
   }
 
-  getNumbersToDisplay = (pageNumbers, currentPage) => {
+  updateNumbersToDisplay = (pageNumbers, currentPage) => {
     const firstPage = pageNumbers[0]
     const [ lastPage ] = pageNumbers.slice(-1)
 
@@ -64,18 +79,22 @@ class Pagination extends Component {
 
     // Remove out of bounds values
     numbersToDisplay = numbersToDisplay.filter((value, index) => (value <= lastPage && value >= firstPage))
-    return numbersToDisplay
+
+    this.setState({ numbersToDisplay })
+  }
+
+  getPageNumbers = (totalNumberOfProducts, resultsPerPage) => {
+    const pageNumbers = [];
+    const numberOfPages = Math.ceil(totalNumberOfProducts / resultsPerPage)
+    for (let i = 1; i <= numberOfPages; i++) {
+      pageNumbers.push(i);
+    }
+    this.setState({ pageNumbers });
+    return pageNumbers
   }
 
   render() {
-    const { currentPage } = this.state;
-
-    const pageNumbers = [];
-    for (let i = 1; i <= 6; i++) {
-      pageNumbers.push(i);
-    }
-
-    const numbersToDisplay = this.getNumbersToDisplay(pageNumbers, currentPage)
+    const { numbersToDisplay } = this.state
 
     return (
       <div className='pagination'>

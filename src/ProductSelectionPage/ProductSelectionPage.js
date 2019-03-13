@@ -134,6 +134,14 @@ class ProductSelectionPage extends Component {
     });
   }
 
+  handlePageChange = (page) => {
+    this.setState({ page });
+    this.fetchData({
+      ...this.state,
+      page,
+    });
+  }
+
   render() {
     return (
       <div>
@@ -147,9 +155,12 @@ class ProductSelectionPage extends Component {
         </div>
         <div className="product-selection-showcase">
           <Showcase
-            products={this.state.products}
+            handlePageChange={this.handlePageChange}
             handleResultsPerPageChange={this.handleResultsPerPageChange}
             handleSortChange={this.handleSortChange}
+            products={this.state.products}
+            totalNumberOfProducts={this.state.count}
+            resultsPerPage={this.state.resultsPerPage}
           />
         </div>
       </div>

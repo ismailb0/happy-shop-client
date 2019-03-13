@@ -14,3 +14,7 @@
   min-width: 8%;
   flex-grow: 1;
 }
+
+.selected {
+  color: #ff008c;
+}
