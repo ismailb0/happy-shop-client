@@ -23,7 +23,7 @@ const styles = theme => ({
   }
 });
 
-function ProductPage({ match, location, classes }) {
+function ProductPage({ location, classes }) {
 
   const { state: { product } } = location;
 
@@ -39,7 +39,7 @@ function ProductPage({ match, location, classes }) {
           component="img"
           className={classes.media}
           image={product.image}
-          title={product.title}
+          title={product.name}
         />
         <div className="card-page-content">
           <div className='product-brand'>
