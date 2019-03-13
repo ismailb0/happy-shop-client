@@ -47,7 +47,7 @@ class Dropdown extends React.Component {
     const { classes } = this.props;
 
     return (
-      <form autoComplete="off">
+      <form autoComplete="off" className='form'>
         <FormControl variant="outlined">
           <div className="label-dropdown-wrapper">
             <div className="label">

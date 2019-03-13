@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import './ShowcaseNavigationBar.css';
 import Dropdown from '../Dropdown';
+import Pagination from '../Pagination';
 
 class ShowcaseNavigationBar extends Component {
 
@@ -46,6 +47,7 @@ PAGINATION_CHOICES = [
           items={this.PAGINATION_CHOICES}
           handleChange={this.props.handleResultsPerPageChange}
         />
+        <Pagination />
       </div>
     );
   }
