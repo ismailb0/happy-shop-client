@@ -7,6 +7,7 @@ import Showcase from '../Showcase';
 
 
 class ProductSelectionPage extends Component {
+  _isMounted = false;
 
   state = {
     startPrice: null,
@@ -24,6 +25,7 @@ class ProductSelectionPage extends Component {
   }
 
   componentDidMount() {
+    this._isMounted = true;
     this.fetchData(this.state);
   }
 
@@ -115,9 +117,10 @@ class ProductSelectionPage extends Component {
             return shouldProductBeKept
           })
         }
-
-        this.setState({ products: filteredProducts, count });
-      }
+       if (this._isMounted) {
+         this.setState({ products: filteredProducts, count });
+       }
+     }
     })
     .catch(error => {
       console.error(error);
@@ -140,6 +143,10 @@ class ProductSelectionPage extends Component {
       ...this.state,
       page,
     });
+  }
+
+  componentWillUnmount() {
+    this._isMounted = false;
   }
 
   render() {
