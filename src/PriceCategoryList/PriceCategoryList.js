@@ -65,7 +65,6 @@ class PriceCategoryList extends React.Component {
   }
 
   handleClick = value => () => {
-    console.log(value, "range")
     const { checked } = this.state;
     const currentIndex = checked.indexOf(value);
     const newChecked = [...checked];
@@ -103,10 +102,7 @@ class PriceCategoryList extends React.Component {
           {RANGES.map(range => (
             <ListItem
               key={range.startPrice}
-              disablePadding
               role={undefined}
-              dense
-              button
               onClick={this.handleClick(range)}
             >
               <Checkbox
