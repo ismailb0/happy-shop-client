@@ -1,12 +1,29 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import { withStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia'
 import ArrowBack from '@material-ui/icons/ArrowBack';
 
 import './ProductPage.css';
 
-function ProductPage({ match, location }) {
+const styles = theme => ({
+  card: {
+    maxWidth: 600,
+    maxHeight: 600,
+  },
+  media: {
+    height: "auto",
+    maxHeight: "400px",
+    width: "auto",
+    maxWidth: "600px",
+    display: "block",
+    marginLeft: "auto",
+    marginRight: "auto",
+  }
+});
+
+function ProductPage({ match, location, classes }) {
 
   const { state: { product } } = location;
 
@@ -17,9 +34,10 @@ function ProductPage({ match, location }) {
           <ArrowBack />
         </Link>
       </div>
-      <Card className='product-info-wrapper'>
+      <Card className={classes.card}>
         <CardMedia
-          className="card-media"
+          component="img"
+          className={classes.media}
           image={product.image}
           title={product.title}
         />
@@ -42,4 +60,4 @@ function ProductPage({ match, location }) {
   );
 }
 
-export default ProductPage;
+export default withStyles(styles)(ProductPage);

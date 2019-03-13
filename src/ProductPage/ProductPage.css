@@ -25,5 +25,7 @@
 }
 
 .back-button {
-  margin-right: 10vw;
+  margin-right: 4vw;
+  margin-left: 4vw;
+  padding: inherit;
 }
