@@ -1,0 +1,241 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Showcase /> should match snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Showcase
+    handlePageChange={[MockFunction]}
+    handleResultsPerPageChange={[MockFunction]}
+    handleSortChange={[MockFunction]}
+    products={
+      Array [
+        Object {
+          "brand": "Sephora Collection",
+          "description": "A gel lip gloss with plumped-up, light-reflecting shine.
+",
+          "image": "https://static-reg.lximg.com/images/product_images/closeup_34208_SephoraCollection_UltraShineLipGel_01PerfectNude_WEB_a0ea7cca39eec787b338105af4ff4a85097902bf_1523780022.png",
+          "name": "Ultra Shine Lip Gel",
+          "price": 19,
+        },
+        Object {
+          "brand": "My Awesome Brand",
+          "description": "Awesome Description",
+          "image": "https://static-reg.lximg.com/images/product_images/closeup_34208_SephoraCollection_UltraShineLipGel_01PerfectNude_WEB_a0ea7cca39eec787b338105af4ff4a85097902bf_1523780022.png",
+          "name": "Awesome Name",
+          "price": 91,
+        },
+      ]
+    }
+    resultsPerPage={15}
+    sortedBy="price"
+    totalNumberOfProducts={400}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <ShowcaseNavigationBar
+          handlePageChange={[MockFunction]}
+          handleResultsPerPageChange={[MockFunction]}
+          handleSortChange={[MockFunction]}
+          resultsPerPage={15}
+          sortedBy="price"
+          totalNumberOfProducts={400}
+        />,
+        <ProductShowcase
+          products={
+            Array [
+              Object {
+                "brand": "Sephora Collection",
+                "description": "A gel lip gloss with plumped-up, light-reflecting shine.
+",
+                "image": "https://static-reg.lximg.com/images/product_images/closeup_34208_SephoraCollection_UltraShineLipGel_01PerfectNude_WEB_a0ea7cca39eec787b338105af4ff4a85097902bf_1523780022.png",
+                "name": "Ultra Shine Lip Gel",
+                "price": 19,
+              },
+              Object {
+                "brand": "My Awesome Brand",
+                "description": "Awesome Description",
+                "image": "https://static-reg.lximg.com/images/product_images/closeup_34208_SephoraCollection_UltraShineLipGel_01PerfectNude_WEB_a0ea7cca39eec787b338105af4ff4a85097902bf_1523780022.png",
+                "name": "Awesome Name",
+                "price": 91,
+              },
+            ]
+          }
+        />,
+      ],
+      "className": "showcase",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "handlePageChange": [MockFunction],
+          "handleResultsPerPageChange": [MockFunction],
+          "handleSortChange": [MockFunction],
+          "resultsPerPage": 15,
+          "sortedBy": "price",
+          "totalNumberOfProducts": 400,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "products": Array [
+            Object {
+              "brand": "Sephora Collection",
+              "description": "A gel lip gloss with plumped-up, light-reflecting shine.
+",
+              "image": "https://static-reg.lximg.com/images/product_images/closeup_34208_SephoraCollection_UltraShineLipGel_01PerfectNude_WEB_a0ea7cca39eec787b338105af4ff4a85097902bf_1523780022.png",
+              "name": "Ultra Shine Lip Gel",
+              "price": 19,
+            },
+            Object {
+              "brand": "My Awesome Brand",
+              "description": "Awesome Description",
+              "image": "https://static-reg.lximg.com/images/product_images/closeup_34208_SephoraCollection_UltraShineLipGel_01PerfectNude_WEB_a0ea7cca39eec787b338105af4ff4a85097902bf_1523780022.png",
+              "name": "Awesome Name",
+              "price": 91,
+            },
+          ],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <ShowcaseNavigationBar
+            handlePageChange={[MockFunction]}
+            handleResultsPerPageChange={[MockFunction]}
+            handleSortChange={[MockFunction]}
+            resultsPerPage={15}
+            sortedBy="price"
+            totalNumberOfProducts={400}
+          />,
+          <ProductShowcase
+            products={
+              Array [
+                Object {
+                  "brand": "Sephora Collection",
+                  "description": "A gel lip gloss with plumped-up, light-reflecting shine.
+",
+                  "image": "https://static-reg.lximg.com/images/product_images/closeup_34208_SephoraCollection_UltraShineLipGel_01PerfectNude_WEB_a0ea7cca39eec787b338105af4ff4a85097902bf_1523780022.png",
+                  "name": "Ultra Shine Lip Gel",
+                  "price": 19,
+                },
+                Object {
+                  "brand": "My Awesome Brand",
+                  "description": "Awesome Description",
+                  "image": "https://static-reg.lximg.com/images/product_images/closeup_34208_SephoraCollection_UltraShineLipGel_01PerfectNude_WEB_a0ea7cca39eec787b338105af4ff4a85097902bf_1523780022.png",
+                  "name": "Awesome Name",
+                  "price": 91,
+                },
+              ]
+            }
+          />,
+        ],
+        "className": "showcase",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "handlePageChange": [MockFunction],
+            "handleResultsPerPageChange": [MockFunction],
+            "handleSortChange": [MockFunction],
+            "resultsPerPage": 15,
+            "sortedBy": "price",
+            "totalNumberOfProducts": 400,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "products": Array [
+              Object {
+                "brand": "Sephora Collection",
+                "description": "A gel lip gloss with plumped-up, light-reflecting shine.
+",
+                "image": "https://static-reg.lximg.com/images/product_images/closeup_34208_SephoraCollection_UltraShineLipGel_01PerfectNude_WEB_a0ea7cca39eec787b338105af4ff4a85097902bf_1523780022.png",
+                "name": "Ultra Shine Lip Gel",
+                "price": 19,
+              },
+              Object {
+                "brand": "My Awesome Brand",
+                "description": "Awesome Description",
+                "image": "https://static-reg.lximg.com/images/product_images/closeup_34208_SephoraCollection_UltraShineLipGel_01PerfectNude_WEB_a0ea7cca39eec787b338105af4ff4a85097902bf_1523780022.png",
+                "name": "Awesome Name",
+                "price": 91,
+              },
+            ],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;

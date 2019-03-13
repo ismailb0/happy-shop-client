@@ -1,0 +1,322 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ShowcaseNavigationBar /> should match snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ShowcaseNavigationBar
+    handlePageChange={[MockFunction]}
+    handleResultsPerPageChange={[MockFunction]}
+    handleSortChange={[MockFunction]}
+    resultsPerPage={10}
+    sortedBy="price"
+    totalNumberOfProducts={100}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <WithStyles(Dropdown)
+          defaultItem={
+            Object {
+              "label": "Price",
+              "value": "price",
+            }
+          }
+          handleChange={[MockFunction]}
+          inputLabel="Sort By"
+          items={
+            Array [
+              Object {
+                "label": "Best Selling",
+                "value": "best_selling",
+              },
+              Object {
+                "label": "Price",
+                "value": "price",
+              },
+            ]
+          }
+        />,
+        <WithStyles(Dropdown)
+          defaultItem={
+            Object {
+              "label": "10",
+              "value": 10,
+            }
+          }
+          handleChange={[MockFunction]}
+          inputLabel="View"
+          items={
+            Array [
+              Object {
+                "label": "10",
+                "value": 10,
+              },
+              Object {
+                "label": "30",
+                "value": 30,
+              },
+              Object {
+                "label": "50",
+                "value": 50,
+              },
+            ]
+          }
+        />,
+        <Pagination
+          handlePageChange={[MockFunction]}
+          resultsPerPage={10}
+          totalNumberOfProducts={100}
+        />,
+      ],
+      "className": "showcase-navigation",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "defaultItem": Object {
+            "label": "Price",
+            "value": "price",
+          },
+          "handleChange": [MockFunction],
+          "inputLabel": "Sort By",
+          "items": Array [
+            Object {
+              "label": "Best Selling",
+              "value": "best_selling",
+            },
+            Object {
+              "label": "Price",
+              "value": "price",
+            },
+          ],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "defaultItem": Object {
+            "label": "10",
+            "value": 10,
+          },
+          "handleChange": [MockFunction],
+          "inputLabel": "View",
+          "items": Array [
+            Object {
+              "label": "10",
+              "value": 10,
+            },
+            Object {
+              "label": "30",
+              "value": 30,
+            },
+            Object {
+              "label": "50",
+              "value": 50,
+            },
+          ],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "handlePageChange": [MockFunction],
+          "resultsPerPage": 10,
+          "totalNumberOfProducts": 100,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <WithStyles(Dropdown)
+            defaultItem={
+              Object {
+                "label": "Price",
+                "value": "price",
+              }
+            }
+            handleChange={[MockFunction]}
+            inputLabel="Sort By"
+            items={
+              Array [
+                Object {
+                  "label": "Best Selling",
+                  "value": "best_selling",
+                },
+                Object {
+                  "label": "Price",
+                  "value": "price",
+                },
+              ]
+            }
+          />,
+          <WithStyles(Dropdown)
+            defaultItem={
+              Object {
+                "label": "10",
+                "value": 10,
+              }
+            }
+            handleChange={[MockFunction]}
+            inputLabel="View"
+            items={
+              Array [
+                Object {
+                  "label": "10",
+                  "value": 10,
+                },
+                Object {
+                  "label": "30",
+                  "value": 30,
+                },
+                Object {
+                  "label": "50",
+                  "value": 50,
+                },
+              ]
+            }
+          />,
+          <Pagination
+            handlePageChange={[MockFunction]}
+            resultsPerPage={10}
+            totalNumberOfProducts={100}
+          />,
+        ],
+        "className": "showcase-navigation",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "defaultItem": Object {
+              "label": "Price",
+              "value": "price",
+            },
+            "handleChange": [MockFunction],
+            "inputLabel": "Sort By",
+            "items": Array [
+              Object {
+                "label": "Best Selling",
+                "value": "best_selling",
+              },
+              Object {
+                "label": "Price",
+                "value": "price",
+              },
+            ],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "defaultItem": Object {
+              "label": "10",
+              "value": 10,
+            },
+            "handleChange": [MockFunction],
+            "inputLabel": "View",
+            "items": Array [
+              Object {
+                "label": "10",
+                "value": 10,
+              },
+              Object {
+                "label": "30",
+                "value": 30,
+              },
+              Object {
+                "label": "50",
+                "value": 50,
+              },
+            ],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "handlePageChange": [MockFunction],
+            "resultsPerPage": 10,
+            "totalNumberOfProducts": 100,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;
