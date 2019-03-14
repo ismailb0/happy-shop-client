@@ -12,29 +12,29 @@ import ExpandMore from '@material-ui/icons/ExpandMore';
 const RANGES = [
   {
     startPrice: 0,
+    endPrice: 10,
+    label: 'Under 10$',
+  },
+  {
+    startPrice: 10,
+    endPrice: 20
+  },
+  {
+    startPrice: 20,
+    endPrice: 30
+  },
+  {
+    startPrice: 30,
+    endPrice: 50
+  },
+  {
+    startPrice: 50,
     endPrice: 100,
-    label: 'Under 100$',
   },
   {
     startPrice: 100,
-    endPrice: 500
-  },
-  {
-    startPrice: 500,
-    endPrice: 680
-  },
-  {
-    startPrice: 680,
-    endPrice: 720
-  },
-  {
-    startPrice: 720,
-    endPrice: 900,
-  },
-  {
-    startPrice: 900,
     endPrice: 1000000000,
-    label: 'Above 900',
+    label: 'Above 100',
   },
 ]
 

@@ -77,7 +77,7 @@ ShallowWrapper {
               tabIndex={-1}
             />
             <WithStyles(ListItemText)
-              primary="Under 100$"
+              primary="Under 10$"
             />
           </WithStyles(ListItem)>
           <WithStyles(ListItem)
@@ -89,7 +89,7 @@ ShallowWrapper {
               tabIndex={-1}
             />
             <WithStyles(ListItemText)
-              primary="100$ - 500$"
+              primary="10$ - 20$"
             />
           </WithStyles(ListItem)>
           <WithStyles(ListItem)
@@ -101,7 +101,7 @@ ShallowWrapper {
               tabIndex={-1}
             />
             <WithStyles(ListItemText)
-              primary="500$ - 680$"
+              primary="20$ - 30$"
             />
           </WithStyles(ListItem)>
           <WithStyles(ListItem)
@@ -113,7 +113,7 @@ ShallowWrapper {
               tabIndex={-1}
             />
             <WithStyles(ListItemText)
-              primary="680$ - 720$"
+              primary="30$ - 50$"
             />
           </WithStyles(ListItem)>
           <WithStyles(ListItem)
@@ -125,7 +125,7 @@ ShallowWrapper {
               tabIndex={-1}
             />
             <WithStyles(ListItemText)
-              primary="720$ - 900$"
+              primary="50$ - 100$"
             />
           </WithStyles(ListItem)>
           <WithStyles(ListItem)
@@ -137,7 +137,7 @@ ShallowWrapper {
               tabIndex={-1}
             />
             <WithStyles(ListItemText)
-              primary="Above 900"
+              primary="Above 100"
             />
           </WithStyles(ListItem)>
         </WithStyles(Collapse)>,
@@ -212,7 +212,7 @@ ShallowWrapper {
                 tabIndex={-1}
               />
               <WithStyles(ListItemText)
-                primary="Under 100$"
+                primary="Under 10$"
               />
             </WithStyles(ListItem)>,
             <WithStyles(ListItem)
@@ -224,7 +224,7 @@ ShallowWrapper {
                 tabIndex={-1}
               />
               <WithStyles(ListItemText)
-                primary="100$ - 500$"
+                primary="10$ - 20$"
               />
             </WithStyles(ListItem)>,
             <WithStyles(ListItem)
@@ -236,7 +236,7 @@ ShallowWrapper {
                 tabIndex={-1}
               />
               <WithStyles(ListItemText)
-                primary="500$ - 680$"
+                primary="20$ - 30$"
               />
             </WithStyles(ListItem)>,
             <WithStyles(ListItem)
@@ -248,7 +248,7 @@ ShallowWrapper {
                 tabIndex={-1}
               />
               <WithStyles(ListItemText)
-                primary="680$ - 720$"
+                primary="30$ - 50$"
               />
             </WithStyles(ListItem)>,
             <WithStyles(ListItem)
@@ -260,7 +260,7 @@ ShallowWrapper {
                 tabIndex={-1}
               />
               <WithStyles(ListItemText)
-                primary="720$ - 900$"
+                primary="50$ - 100$"
               />
             </WithStyles(ListItem)>,
             <WithStyles(ListItem)
@@ -272,7 +272,7 @@ ShallowWrapper {
                 tabIndex={-1}
               />
               <WithStyles(ListItemText)
-                primary="Above 900"
+                primary="Above 100"
               />
             </WithStyles(ListItem)>,
           ],
@@ -294,7 +294,7 @@ ShallowWrapper {
                   tabIndex={-1}
                 />,
                 <WithStyles(ListItemText)
-                  primary="Under 100$"
+                  primary="Under 10$"
                 />,
               ],
               "onClick": [Function],
@@ -321,7 +321,199 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "class",
                 "props": Object {
-                  "primary": "Under 100$",
+                  "primary": "Under 10$",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "10",
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <WithStyles(Checkbox)
+                  checked={false}
+                  disableRipple={true}
+                  tabIndex={-1}
+                />,
+                <WithStyles(ListItemText)
+                  primary="10$ - 20$"
+                />,
+              ],
+              "onClick": [Function],
+              "role": undefined,
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "checked": false,
+                  "className": undefined,
+                  "disableRipple": true,
+                  "tabIndex": -1,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "primary": "10$ - 20$",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "20",
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <WithStyles(Checkbox)
+                  checked={false}
+                  disableRipple={true}
+                  tabIndex={-1}
+                />,
+                <WithStyles(ListItemText)
+                  primary="20$ - 30$"
+                />,
+              ],
+              "onClick": [Function],
+              "role": undefined,
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "checked": false,
+                  "className": undefined,
+                  "disableRipple": true,
+                  "tabIndex": -1,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "primary": "20$ - 30$",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "30",
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <WithStyles(Checkbox)
+                  checked={false}
+                  disableRipple={true}
+                  tabIndex={-1}
+                />,
+                <WithStyles(ListItemText)
+                  primary="30$ - 50$"
+                />,
+              ],
+              "onClick": [Function],
+              "role": undefined,
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "checked": false,
+                  "className": undefined,
+                  "disableRipple": true,
+                  "tabIndex": -1,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "primary": "30$ - 50$",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "50",
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <WithStyles(Checkbox)
+                  checked={false}
+                  disableRipple={true}
+                  tabIndex={-1}
+                />,
+                <WithStyles(ListItemText)
+                  primary="50$ - 100$"
+                />,
+              ],
+              "onClick": [Function],
+              "role": undefined,
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "checked": false,
+                  "className": undefined,
+                  "disableRipple": true,
+                  "tabIndex": -1,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "primary": "50$ - 100$",
                 },
                 "ref": null,
                 "rendered": null,
@@ -342,7 +534,7 @@ ShallowWrapper {
                   tabIndex={-1}
                 />,
                 <WithStyles(ListItemText)
-                  primary="100$ - 500$"
+                  primary="Above 100"
                 />,
               ],
               "onClick": [Function],
@@ -369,199 +561,7 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "class",
                 "props": Object {
-                  "primary": "100$ - 500$",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-            ],
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": "500",
-            "nodeType": "class",
-            "props": Object {
-              "children": Array [
-                <WithStyles(Checkbox)
-                  checked={false}
-                  disableRipple={true}
-                  tabIndex={-1}
-                />,
-                <WithStyles(ListItemText)
-                  primary="500$ - 680$"
-                />,
-              ],
-              "onClick": [Function],
-              "role": undefined,
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "checked": false,
-                  "className": undefined,
-                  "disableRipple": true,
-                  "tabIndex": -1,
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "primary": "500$ - 680$",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-            ],
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": "680",
-            "nodeType": "class",
-            "props": Object {
-              "children": Array [
-                <WithStyles(Checkbox)
-                  checked={false}
-                  disableRipple={true}
-                  tabIndex={-1}
-                />,
-                <WithStyles(ListItemText)
-                  primary="680$ - 720$"
-                />,
-              ],
-              "onClick": [Function],
-              "role": undefined,
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "checked": false,
-                  "className": undefined,
-                  "disableRipple": true,
-                  "tabIndex": -1,
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "primary": "680$ - 720$",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-            ],
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": "720",
-            "nodeType": "class",
-            "props": Object {
-              "children": Array [
-                <WithStyles(Checkbox)
-                  checked={false}
-                  disableRipple={true}
-                  tabIndex={-1}
-                />,
-                <WithStyles(ListItemText)
-                  primary="720$ - 900$"
-                />,
-              ],
-              "onClick": [Function],
-              "role": undefined,
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "checked": false,
-                  "className": undefined,
-                  "disableRipple": true,
-                  "tabIndex": -1,
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "primary": "720$ - 900$",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-            ],
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": "900",
-            "nodeType": "class",
-            "props": Object {
-              "children": Array [
-                <WithStyles(Checkbox)
-                  checked={false}
-                  disableRipple={true}
-                  tabIndex={-1}
-                />,
-                <WithStyles(ListItemText)
-                  primary="Above 900"
-                />,
-              ],
-              "onClick": [Function],
-              "role": undefined,
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "checked": false,
-                  "className": undefined,
-                  "disableRipple": true,
-                  "tabIndex": -1,
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "primary": "Above 900",
+                  "primary": "Above 100",
                 },
                 "ref": null,
                 "rendered": null,
@@ -613,7 +613,7 @@ ShallowWrapper {
                 tabIndex={-1}
               />
               <WithStyles(ListItemText)
-                primary="Under 100$"
+                primary="Under 10$"
               />
             </WithStyles(ListItem)>
             <WithStyles(ListItem)
@@ -625,7 +625,7 @@ ShallowWrapper {
                 tabIndex={-1}
               />
               <WithStyles(ListItemText)
-                primary="100$ - 500$"
+                primary="10$ - 20$"
               />
             </WithStyles(ListItem)>
             <WithStyles(ListItem)
@@ -637,7 +637,7 @@ ShallowWrapper {
                 tabIndex={-1}
               />
               <WithStyles(ListItemText)
-                primary="500$ - 680$"
+                primary="20$ - 30$"
               />
             </WithStyles(ListItem)>
             <WithStyles(ListItem)
@@ -649,7 +649,7 @@ ShallowWrapper {
                 tabIndex={-1}
               />
               <WithStyles(ListItemText)
-                primary="680$ - 720$"
+                primary="30$ - 50$"
               />
             </WithStyles(ListItem)>
             <WithStyles(ListItem)
@@ -661,7 +661,7 @@ ShallowWrapper {
                 tabIndex={-1}
               />
               <WithStyles(ListItemText)
-                primary="720$ - 900$"
+                primary="50$ - 100$"
               />
             </WithStyles(ListItem)>
             <WithStyles(ListItem)
@@ -673,7 +673,7 @@ ShallowWrapper {
                 tabIndex={-1}
               />
               <WithStyles(ListItemText)
-                primary="Above 900"
+                primary="Above 100"
               />
             </WithStyles(ListItem)>
           </WithStyles(Collapse)>,
@@ -748,7 +748,7 @@ ShallowWrapper {
                   tabIndex={-1}
                 />
                 <WithStyles(ListItemText)
-                  primary="Under 100$"
+                  primary="Under 10$"
                 />
               </WithStyles(ListItem)>,
               <WithStyles(ListItem)
@@ -760,7 +760,7 @@ ShallowWrapper {
                   tabIndex={-1}
                 />
                 <WithStyles(ListItemText)
-                  primary="100$ - 500$"
+                  primary="10$ - 20$"
                 />
               </WithStyles(ListItem)>,
               <WithStyles(ListItem)
@@ -772,7 +772,7 @@ ShallowWrapper {
                   tabIndex={-1}
                 />
                 <WithStyles(ListItemText)
-                  primary="500$ - 680$"
+                  primary="20$ - 30$"
                 />
               </WithStyles(ListItem)>,
               <WithStyles(ListItem)
@@ -784,7 +784,7 @@ ShallowWrapper {
                   tabIndex={-1}
                 />
                 <WithStyles(ListItemText)
-                  primary="680$ - 720$"
+                  primary="30$ - 50$"
                 />
               </WithStyles(ListItem)>,
               <WithStyles(ListItem)
@@ -796,7 +796,7 @@ ShallowWrapper {
                   tabIndex={-1}
                 />
                 <WithStyles(ListItemText)
-                  primary="720$ - 900$"
+                  primary="50$ - 100$"
                 />
               </WithStyles(ListItem)>,
               <WithStyles(ListItem)
@@ -808,7 +808,7 @@ ShallowWrapper {
                   tabIndex={-1}
                 />
                 <WithStyles(ListItemText)
-                  primary="Above 900"
+                  primary="Above 100"
                 />
               </WithStyles(ListItem)>,
             ],
@@ -830,7 +830,7 @@ ShallowWrapper {
                     tabIndex={-1}
                   />,
                   <WithStyles(ListItemText)
-                    primary="Under 100$"
+                    primary="Under 10$"
                   />,
                 ],
                 "onClick": [Function],
@@ -857,7 +857,199 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "class",
                   "props": Object {
-                    "primary": "Under 100$",
+                    "primary": "Under 10$",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "10",
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <WithStyles(Checkbox)
+                    checked={false}
+                    disableRipple={true}
+                    tabIndex={-1}
+                  />,
+                  <WithStyles(ListItemText)
+                    primary="10$ - 20$"
+                  />,
+                ],
+                "onClick": [Function],
+                "role": undefined,
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "checked": false,
+                    "className": undefined,
+                    "disableRipple": true,
+                    "tabIndex": -1,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "primary": "10$ - 20$",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "20",
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <WithStyles(Checkbox)
+                    checked={false}
+                    disableRipple={true}
+                    tabIndex={-1}
+                  />,
+                  <WithStyles(ListItemText)
+                    primary="20$ - 30$"
+                  />,
+                ],
+                "onClick": [Function],
+                "role": undefined,
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "checked": false,
+                    "className": undefined,
+                    "disableRipple": true,
+                    "tabIndex": -1,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "primary": "20$ - 30$",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "30",
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <WithStyles(Checkbox)
+                    checked={false}
+                    disableRipple={true}
+                    tabIndex={-1}
+                  />,
+                  <WithStyles(ListItemText)
+                    primary="30$ - 50$"
+                  />,
+                ],
+                "onClick": [Function],
+                "role": undefined,
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "checked": false,
+                    "className": undefined,
+                    "disableRipple": true,
+                    "tabIndex": -1,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "primary": "30$ - 50$",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "50",
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <WithStyles(Checkbox)
+                    checked={false}
+                    disableRipple={true}
+                    tabIndex={-1}
+                  />,
+                  <WithStyles(ListItemText)
+                    primary="50$ - 100$"
+                  />,
+                ],
+                "onClick": [Function],
+                "role": undefined,
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "checked": false,
+                    "className": undefined,
+                    "disableRipple": true,
+                    "tabIndex": -1,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "primary": "50$ - 100$",
                   },
                   "ref": null,
                   "rendered": null,
@@ -878,7 +1070,7 @@ ShallowWrapper {
                     tabIndex={-1}
                   />,
                   <WithStyles(ListItemText)
-                    primary="100$ - 500$"
+                    primary="Above 100"
                   />,
                 ],
                 "onClick": [Function],
@@ -905,199 +1097,7 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "class",
                   "props": Object {
-                    "primary": "100$ - 500$",
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": [Function],
-                },
-              ],
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": "500",
-              "nodeType": "class",
-              "props": Object {
-                "children": Array [
-                  <WithStyles(Checkbox)
-                    checked={false}
-                    disableRipple={true}
-                    tabIndex={-1}
-                  />,
-                  <WithStyles(ListItemText)
-                    primary="500$ - 680$"
-                  />,
-                ],
-                "onClick": [Function],
-                "role": undefined,
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "checked": false,
-                    "className": undefined,
-                    "disableRipple": true,
-                    "tabIndex": -1,
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "primary": "500$ - 680$",
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": [Function],
-                },
-              ],
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": "680",
-              "nodeType": "class",
-              "props": Object {
-                "children": Array [
-                  <WithStyles(Checkbox)
-                    checked={false}
-                    disableRipple={true}
-                    tabIndex={-1}
-                  />,
-                  <WithStyles(ListItemText)
-                    primary="680$ - 720$"
-                  />,
-                ],
-                "onClick": [Function],
-                "role": undefined,
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "checked": false,
-                    "className": undefined,
-                    "disableRipple": true,
-                    "tabIndex": -1,
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "primary": "680$ - 720$",
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": [Function],
-                },
-              ],
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": "720",
-              "nodeType": "class",
-              "props": Object {
-                "children": Array [
-                  <WithStyles(Checkbox)
-                    checked={false}
-                    disableRipple={true}
-                    tabIndex={-1}
-                  />,
-                  <WithStyles(ListItemText)
-                    primary="720$ - 900$"
-                  />,
-                ],
-                "onClick": [Function],
-                "role": undefined,
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "checked": false,
-                    "className": undefined,
-                    "disableRipple": true,
-                    "tabIndex": -1,
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "primary": "720$ - 900$",
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": [Function],
-                },
-              ],
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": "900",
-              "nodeType": "class",
-              "props": Object {
-                "children": Array [
-                  <WithStyles(Checkbox)
-                    checked={false}
-                    disableRipple={true}
-                    tabIndex={-1}
-                  />,
-                  <WithStyles(ListItemText)
-                    primary="Above 900"
-                  />,
-                ],
-                "onClick": [Function],
-                "role": undefined,
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "checked": false,
-                    "className": undefined,
-                    "disableRipple": true,
-                    "tabIndex": -1,
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "primary": "Above 900",
+                    "primary": "Above 100",
                   },
                   "ref": null,
                   "rendered": null,
