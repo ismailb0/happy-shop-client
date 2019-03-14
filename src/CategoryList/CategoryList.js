@@ -67,7 +67,7 @@ class CategoryList extends Component {
                 subCategories: []
               },
               {
-                name: 'Mascare',
+                name: 'Mascara',
                 isOpen: false,
                 subCategories: []
               },

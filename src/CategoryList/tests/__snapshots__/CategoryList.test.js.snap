@@ -305,7 +305,7 @@ ShallowWrapper {
                               inset={true}
                               primary={
                                 <div>
-                                  Mascare
+                                  Mascara
                                 </div>
                               }
                             />
@@ -779,7 +779,7 @@ ShallowWrapper {
                                 inset={true}
                                 primary={
                                   <div>
-                                    Mascare
+                                    Mascara
                                   </div>
                                 }
                               />
@@ -1254,7 +1254,7 @@ ShallowWrapper {
                                   inset={true}
                                   primary={
                                     <div>
-                                      Mascare
+                                      Mascara
                                     </div>
                                   }
                                 />
@@ -1755,7 +1755,7 @@ ShallowWrapper {
                                   inset={true}
                                   primary={
                                     <div>
-                                      Mascare
+                                      Mascara
                                     </div>
                                   }
                                 />
@@ -2206,7 +2206,7 @@ ShallowWrapper {
                                   inset={true}
                                   primary={
                                     <div>
-                                      Mascare
+                                      Mascara
                                     </div>
                                   }
                                 />
@@ -2651,7 +2651,7 @@ ShallowWrapper {
                                     inset={true}
                                     primary={
                                       <div>
-                                        Mascare
+                                        Mascara
                                       </div>
                                     }
                                   />
@@ -3792,7 +3792,7 @@ ShallowWrapper {
                                       inset={true}
                                       primary={
                                         <div>
-                                          Mascare
+                                          Mascara
                                         </div>
                                       }
                                     />
@@ -3937,7 +3937,7 @@ ShallowWrapper {
                                       inset={true}
                                       primary={
                                         <div>
-                                          Mascare
+                                          Mascara
                                         </div>
                                       }
                                     />
@@ -4032,7 +4032,7 @@ ShallowWrapper {
                                       inset={true}
                                       primary={
                                         <div>
-                                          Mascare
+                                          Mascara
                                         </div>
                                       }
                                     />
@@ -4121,7 +4121,7 @@ ShallowWrapper {
                                         inset={true}
                                         primary={
                                           <div>
-                                            Mascare
+                                            Mascara
                                           </div>
                                         }
                                       />
@@ -4360,7 +4360,7 @@ ShallowWrapper {
                                 },
                                 Object {
                                   "instance": null,
-                                  "key": "Mascare",
+                                  "key": "Mascara",
                                   "nodeType": "function",
                                   "props": Object {
                                     "children": Array [
@@ -4373,7 +4373,7 @@ ShallowWrapper {
                                           inset={true}
                                           primary={
                                             <div>
-                                              Mascare
+                                              Mascara
                                             </div>
                                           }
                                         />
@@ -4385,7 +4385,7 @@ ShallowWrapper {
                                   "rendered": Array [
                                     Object {
                                       "instance": null,
-                                      "key": "Mascare",
+                                      "key": "Mascara",
                                       "nodeType": "class",
                                       "props": Object {
                                         "button": true,
@@ -4395,7 +4395,7 @@ ShallowWrapper {
                                             inset={true}
                                             primary={
                                               <div>
-                                                Mascare
+                                                Mascara
                                               </div>
                                             }
                                           />,
@@ -4413,7 +4413,7 @@ ShallowWrapper {
                                             "disableTypography": true,
                                             "inset": true,
                                             "primary": <div>
-                                              Mascare
+                                              Mascara
                                             </div>,
                                           },
                                           "ref": null,
@@ -6357,7 +6357,7 @@ ShallowWrapper {
                                 inset={true}
                                 primary={
                                   <div>
-                                    Mascare
+                                    Mascara
                                   </div>
                                 }
                               />
@@ -6831,7 +6831,7 @@ ShallowWrapper {
                                   inset={true}
                                   primary={
                                     <div>
-                                      Mascare
+                                      Mascara
                                     </div>
                                   }
                                 />
@@ -7306,7 +7306,7 @@ ShallowWrapper {
                                     inset={true}
                                     primary={
                                       <div>
-                                        Mascare
+                                        Mascara
                                       </div>
                                     }
                                   />
@@ -7807,7 +7807,7 @@ ShallowWrapper {
                                     inset={true}
                                     primary={
                                       <div>
-                                        Mascare
+                                        Mascara
                                       </div>
                                     }
                                   />
@@ -8258,7 +8258,7 @@ ShallowWrapper {
                                     inset={true}
                                     primary={
                                       <div>
-                                        Mascare
+                                        Mascara
                                       </div>
                                     }
                                   />
@@ -8703,7 +8703,7 @@ ShallowWrapper {
                                       inset={true}
                                       primary={
                                         <div>
-                                          Mascare
+                                          Mascara
                                         </div>
                                       }
                                     />
@@ -9844,7 +9844,7 @@ ShallowWrapper {
                                         inset={true}
                                         primary={
                                           <div>
-                                            Mascare
+                                            Mascara
                                           </div>
                                         }
                                       />
@@ -9989,7 +9989,7 @@ ShallowWrapper {
                                         inset={true}
                                         primary={
                                           <div>
-                                            Mascare
+                                            Mascara
                                           </div>
                                         }
                                       />
@@ -10084,7 +10084,7 @@ ShallowWrapper {
                                         inset={true}
                                         primary={
                                           <div>
-                                            Mascare
+                                            Mascara
                                           </div>
                                         }
                                       />
@@ -10173,7 +10173,7 @@ ShallowWrapper {
                                           inset={true}
                                           primary={
                                             <div>
-                                              Mascare
+                                              Mascara
                                             </div>
                                           }
                                         />
@@ -10412,7 +10412,7 @@ ShallowWrapper {
                                   },
                                   Object {
                                     "instance": null,
-                                    "key": "Mascare",
+                                    "key": "Mascara",
                                     "nodeType": "function",
                                     "props": Object {
                                       "children": Array [
@@ -10425,7 +10425,7 @@ ShallowWrapper {
                                             inset={true}
                                             primary={
                                               <div>
-                                                Mascare
+                                                Mascara
                                               </div>
                                             }
                                           />
@@ -10437,7 +10437,7 @@ ShallowWrapper {
                                     "rendered": Array [
                                       Object {
                                         "instance": null,
-                                        "key": "Mascare",
+                                        "key": "Mascara",
                                         "nodeType": "class",
                                         "props": Object {
                                           "button": true,
@@ -10447,7 +10447,7 @@ ShallowWrapper {
                                               inset={true}
                                               primary={
                                                 <div>
-                                                  Mascare
+                                                  Mascara
                                                 </div>
                                               }
                                             />,
@@ -10465,7 +10465,7 @@ ShallowWrapper {
                                               "disableTypography": true,
                                               "inset": true,
                                               "primary": <div>
-                                                Mascare
+                                                Mascara
                                               </div>,
                                             },
                                             "ref": null,
