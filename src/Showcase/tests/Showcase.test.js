@@ -11,6 +11,7 @@ describe('<Showcase />', () => {
     sortedBy: 'price',
     resultsPerPage: 15,
     totalNumberOfProducts: 400,
+    page: 1,
     products: [
       {
         brand: "Sephora Collection",

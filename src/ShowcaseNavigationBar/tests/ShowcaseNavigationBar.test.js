@@ -7,6 +7,7 @@ describe('<ShowcaseNavigationBar />', () => {
   const props = {
     sortedBy: 'price',
     resultsPerPage: 10,
+    page: 1,
     handleSortChange: jest.fn(),
     handleResultsPerPageChange: jest.fn(),
     handlePageChange: jest.fn(),

@@ -7,6 +7,7 @@ ShallowWrapper {
     handlePageChange={[MockFunction]}
     handleResultsPerPageChange={[MockFunction]}
     handleSortChange={[MockFunction]}
+    page={1}
     resultsPerPage={10}
     sortedBy="price"
     totalNumberOfProducts={100}
@@ -76,6 +77,7 @@ ShallowWrapper {
         />,
         <Pagination
           handlePageChange={[MockFunction]}
+          page={1}
           resultsPerPage={10}
           totalNumberOfProducts={100}
         />,
@@ -146,6 +148,7 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "handlePageChange": [MockFunction],
+          "page": 1,
           "resultsPerPage": 10,
           "totalNumberOfProducts": 100,
         },
@@ -213,6 +216,7 @@ ShallowWrapper {
           />,
           <Pagination
             handlePageChange={[MockFunction]}
+            page={1}
             resultsPerPage={10}
             totalNumberOfProducts={100}
           />,
@@ -283,6 +287,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "handlePageChange": [MockFunction],
+            "page": 1,
             "resultsPerPage": 10,
             "totalNumberOfProducts": 100,
           },

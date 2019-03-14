@@ -57,8 +57,9 @@ PAGINATION_CHOICES = [
         />
         <Pagination
           handlePageChange={this.props.handlePageChange}
-          totalNumberOfProducts={this.props.totalNumberOfProducts}
+          page={this.props.page}
           resultsPerPage={this.props.resultsPerPage}
+          totalNumberOfProducts={this.props.totalNumberOfProducts}
         />
       </div>
     );

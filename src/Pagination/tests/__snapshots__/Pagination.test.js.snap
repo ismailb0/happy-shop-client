@@ -19,6 +19,7 @@ ShallowWrapper {
         ],
       }
     }
+    page={1}
     resultsPerPage={10}
     totalNumberOfProducts={48}
   />,

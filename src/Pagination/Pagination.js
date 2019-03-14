@@ -5,7 +5,7 @@ import './Pagination.css';
 class Pagination extends Component {
 
   state = {
-    currentPage: 1,
+    currentPage: this.props.page,
     numbersToDisplay: [],
     pageNumbers: []
   };
@@ -13,6 +13,11 @@ class Pagination extends Component {
   componentWillReceiveProps(nextProps) {
     const pageNumbers = this.getPageNumbers(nextProps.totalNumberOfProducts, nextProps.resultsPerPage)
     this.updateNumbersToDisplay(pageNumbers, this.state.currentPage)
+    if (nextProps.page !== this.props.page) {
+      this.setState({
+        currentPage: nextProps.page
+      })
+    }
   }
 
   handleClick = (value) => {

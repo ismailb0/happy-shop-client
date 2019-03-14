@@ -5,6 +5,7 @@ import Pagination from '../Pagination';
 describe('<Pagination />', () => {
 
   const props = {
+    page: 1,
     handlePageChange: jest.fn(),
     totalNumberOfProducts: 48,
     resultsPerPage: 10

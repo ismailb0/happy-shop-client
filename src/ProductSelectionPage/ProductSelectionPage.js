@@ -171,6 +171,7 @@ class ProductSelectionPage extends Component {
             handlePageChange={this.handlePageChange}
             handleResultsPerPageChange={this.handleResultsPerPageChange}
             handleSortChange={this.handleSortChange}
+            page={this.state.page}
             products={this.state.products}
             totalNumberOfProducts={this.state.count}
             sortedBy={this.state.sortedBy}

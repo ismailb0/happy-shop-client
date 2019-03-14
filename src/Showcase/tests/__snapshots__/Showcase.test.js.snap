@@ -7,6 +7,7 @@ ShallowWrapper {
     handlePageChange={[MockFunction]}
     handleResultsPerPageChange={[MockFunction]}
     handleSortChange={[MockFunction]}
+    page={1}
     products={
       Array [
         Object {
@@ -49,6 +50,7 @@ ShallowWrapper {
           handlePageChange={[MockFunction]}
           handleResultsPerPageChange={[MockFunction]}
           handleSortChange={[MockFunction]}
+          page={1}
           resultsPerPage={15}
           sortedBy="price"
           totalNumberOfProducts={400}
@@ -87,6 +89,7 @@ ShallowWrapper {
           "handlePageChange": [MockFunction],
           "handleResultsPerPageChange": [MockFunction],
           "handleSortChange": [MockFunction],
+          "page": 1,
           "resultsPerPage": 15,
           "sortedBy": "price",
           "totalNumberOfProducts": 400,
@@ -136,6 +139,7 @@ ShallowWrapper {
             handlePageChange={[MockFunction]}
             handleResultsPerPageChange={[MockFunction]}
             handleSortChange={[MockFunction]}
+            page={1}
             resultsPerPage={15}
             sortedBy="price"
             totalNumberOfProducts={400}
@@ -174,6 +178,7 @@ ShallowWrapper {
             "handlePageChange": [MockFunction],
             "handleResultsPerPageChange": [MockFunction],
             "handleSortChange": [MockFunction],
+            "page": 1,
             "resultsPerPage": 15,
             "sortedBy": "price",
             "totalNumberOfProducts": 400,
