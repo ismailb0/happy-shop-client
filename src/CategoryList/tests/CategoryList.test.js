@@ -89,7 +89,6 @@ describe('<CategoryList />', () => {
     const componentInstance = renderedComponent.instance()
     componentInstance.toggleSingleCategory('Contour', category)
     expect(props.handleSubCategoryChange).toHaveBeenCalledWith('Contour')
-    console.log(componentInstance.state.categories[0].subCategories[0])
     expect(componentInstance.state.categories[0].subCategories[0]).toEqual(
       {
         name: 'Face',

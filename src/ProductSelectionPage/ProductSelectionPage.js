@@ -44,12 +44,14 @@ class ProductSelectionPage extends Component {
       category,
       subcategory: null,
       subsubcategory: null,
+      page: 1
     });
     this.fetchData({
       ...this.state,
       category,
       subcategory: null,
       subsubcategory: null,
+      page: 1
     });
   }
 
@@ -58,12 +60,14 @@ class ProductSelectionPage extends Component {
       category: null,
       subcategory,
       subsubcategory: null,
+      page: 1
     });
     this.fetchData({
       ...this.state,
       category: null,
       subcategory,
       subsubcategory: null,
+      page: 1
     });
   }
 
@@ -72,12 +76,14 @@ class ProductSelectionPage extends Component {
       category: null,
       subcategory: null,
       subsubcategory,
+      page: 1
     });
     this.fetchData({
       ...this.state,
       category: null,
       subcategory: null,
       subsubcategory,
+      page: 1
     });
   }
 
