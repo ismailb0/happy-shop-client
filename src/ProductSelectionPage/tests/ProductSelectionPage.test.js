@@ -1,6 +1,7 @@
 import React from 'react';
 import { shallow } from "enzyme";
 import ProductSelectionPage from '../ProductSelectionPage';
+import * as Api from '../../utils/api';
 
 const ReactTestRenderer = require('react-test-renderer');
 
@@ -115,6 +116,21 @@ describe('<ProductSelectionPage />', () => {
       ...componentInstance.state,
       page: 3
     })
+  });
+
+  it('fetchData should call getProducts with the right parameters', () => {
+
+    const mockSuccessResponse = {};
+    const mockJsonPromise = Promise.resolve(mockSuccessResponse);
+    const mockFetchPromise = Promise.resolve({
+      json: () => mockJsonPromise,
+    });
+    jest.spyOn(Api, 'getProducts').mockImplementation(() => mockFetchPromise);
+
+    const renderedComponent = shallow(<ProductSelectionPage />);
+    const componentInstance = renderedComponent.instance()
+
+    expect(Api.getProducts).toHaveBeenCalledTimes(1);
   });
 
   it('should match snapshot for ProductSelectionPage', () => {

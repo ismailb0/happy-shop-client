@@ -1,4 +1,3 @@
-import React from 'react';
 import URI from "urijs";
 import { getProducts } from '../api';
 
