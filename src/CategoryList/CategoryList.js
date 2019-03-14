@@ -1,11 +1,11 @@
 import React, { Component, Fragment } from 'react';
 
+import Collapse from '@material-ui/core/Collapse';
+import ExpandMore from '@material-ui/icons/ExpandMore';
+import ExpandLess from '@material-ui/icons/ExpandLess';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
-import Collapse from '@material-ui/core/Collapse';
-import ExpandLess from '@material-ui/icons/ExpandLess';
-import ExpandMore from '@material-ui/icons/ExpandMore';
 
 
 class CategoryList extends Component {
@@ -201,6 +201,7 @@ class CategoryList extends Component {
   toggleItem = (itemName) => {
     const categories = this.state.categories;
 
+    // Find the parentCategory to the given category
     const parentItem = categories.find((category) => {
       const isItemNameInParentCategory = category.name === itemName;
       const isItemNameInChildCategory = category.subCategories.find((subcategory) => {
@@ -209,6 +210,7 @@ class CategoryList extends Component {
       return isItemNameInParentCategory || isItemNameInChildCategory
     }, null)
 
+    // If we close the parentItem, the children categories should close too
     if (parentItem !== null) {
       if (itemName === parentItem.name && parentItem.isOpen === true) {
         this.closeAllSubCategories(parentItem)

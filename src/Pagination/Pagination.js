@@ -61,6 +61,7 @@ class Pagination extends Component {
     const firstPage = pageNumbers[0]
     const [ lastPage ] = pageNumbers.slice(-1)
 
+    // list numbers to display in pagination
     let numbersToDisplay = [firstPage]
 
     if (currentPage > firstPage && currentPage < lastPage) {
