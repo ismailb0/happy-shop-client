@@ -305,7 +305,11 @@ exports[`<ProductSelectionPage /> should match snapshot for ProductSelectionPage
       </div>
       <div
         className="product-showcase-wrapper"
-      />
+      >
+        <div
+          className="product-showcase"
+        />
+      </div>
     </div>
   </div>
 </div>

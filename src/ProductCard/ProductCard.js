@@ -2,8 +2,19 @@ import React, { Component } from 'react';
 
 import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
+import { withStyles } from '@material-ui/core/styles';
 
 import './ProductCard.css';
+
+const styles = theme => ({
+  media: {
+    height: "60%",
+    display: "flex",
+    marginLeft: "auto",
+    marginRight: "auto",
+    width: "auto",
+  }
+});
 
 class ProductCard extends Component {
 
@@ -11,7 +22,8 @@ class ProductCard extends Component {
     return (
       <Card className='product-card'>
         <CardMedia
-          className="card-media"
+          component="img"
+          className={this.props.classes.media}
           image={this.props.image}
           title={this.props.name}
         />
@@ -31,4 +43,4 @@ class ProductCard extends Component {
   }
 }
 
-export default ProductCard;
+export default withStyles(styles)(ProductCard);

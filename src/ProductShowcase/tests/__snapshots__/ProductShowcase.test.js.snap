@@ -38,7 +38,9 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": Array [
+      "children": <div
+        className="product-showcase"
+      >
         <div
           className="product-showcase-row"
         >
@@ -61,7 +63,7 @@ ShallowWrapper {
               }
             }
           >
-            <ProductCard
+            <WithStyles(ProductCard)
               brand="Sephora Collection"
               image="https://static-reg.lximg.com/images/product_images/closeup_34208_SephoraCollection_UltraShineLipGel_01PerfectNude_WEB_a0ea7cca39eec787b338105af4ff4a85097902bf_1523780022.png"
               name="Ultra Shine Lip Gel"
@@ -86,178 +88,19 @@ ShallowWrapper {
               }
             }
           >
-            <ProductCard
+            <WithStyles(ProductCard)
               brand="My Awesome Brand"
               image="https://static-reg.lximg.com/images/product_images/closeup_34208_SephoraCollection_UltraShineLipGel_01PerfectNude_WEB_a0ea7cca39eec787b338105af4ff4a85097902bf_1523780022.png"
               name="Awesome Name"
               price={91}
             />
           </Link>
-        </div>,
-      ],
+        </div>
+      </div>,
       "className": "product-showcase-wrapper",
     },
     "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            <Link
-              className="product-card-link"
-              replace={false}
-              to={
-                Object {
-                  "pathname": "/product/undefined",
-                  "state": Object {
-                    "product": Object {
-                      "brand": "Sephora Collection",
-                      "description": "A gel lip gloss with plumped-up, light-reflecting shine.
-",
-                      "image": "https://static-reg.lximg.com/images/product_images/closeup_34208_SephoraCollection_UltraShineLipGel_01PerfectNude_WEB_a0ea7cca39eec787b338105af4ff4a85097902bf_1523780022.png",
-                      "name": "Ultra Shine Lip Gel",
-                      "price": 19,
-                    },
-                  },
-                }
-              }
-            >
-              <ProductCard
-                brand="Sephora Collection"
-                image="https://static-reg.lximg.com/images/product_images/closeup_34208_SephoraCollection_UltraShineLipGel_01PerfectNude_WEB_a0ea7cca39eec787b338105af4ff4a85097902bf_1523780022.png"
-                name="Ultra Shine Lip Gel"
-                price={19}
-              />
-            </Link>,
-            <Link
-              className="product-card-link"
-              replace={false}
-              to={
-                Object {
-                  "pathname": "/product/undefined",
-                  "state": Object {
-                    "product": Object {
-                      "brand": "My Awesome Brand",
-                      "description": "Awesome Description",
-                      "image": "https://static-reg.lximg.com/images/product_images/closeup_34208_SephoraCollection_UltraShineLipGel_01PerfectNude_WEB_a0ea7cca39eec787b338105af4ff4a85097902bf_1523780022.png",
-                      "name": "Awesome Name",
-                      "price": 91,
-                    },
-                  },
-                }
-              }
-            >
-              <ProductCard
-                brand="My Awesome Brand"
-                image="https://static-reg.lximg.com/images/product_images/closeup_34208_SephoraCollection_UltraShineLipGel_01PerfectNude_WEB_a0ea7cca39eec787b338105af4ff4a85097902bf_1523780022.png"
-                name="Awesome Name"
-                price={91}
-              />
-            </Link>,
-          ],
-          "className": "product-showcase-row",
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": <ProductCard
-                brand="Sephora Collection"
-                image="https://static-reg.lximg.com/images/product_images/closeup_34208_SephoraCollection_UltraShineLipGel_01PerfectNude_WEB_a0ea7cca39eec787b338105af4ff4a85097902bf_1523780022.png"
-                name="Ultra Shine Lip Gel"
-                price={19}
-              />,
-              "className": "product-card-link",
-              "replace": false,
-              "to": Object {
-                "pathname": "/product/undefined",
-                "state": Object {
-                  "product": Object {
-                    "brand": "Sephora Collection",
-                    "description": "A gel lip gloss with plumped-up, light-reflecting shine.
-",
-                    "image": "https://static-reg.lximg.com/images/product_images/closeup_34208_SephoraCollection_UltraShineLipGel_01PerfectNude_WEB_a0ea7cca39eec787b338105af4ff4a85097902bf_1523780022.png",
-                    "name": "Ultra Shine Lip Gel",
-                    "price": 19,
-                  },
-                },
-              },
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "brand": "Sephora Collection",
-                "image": "https://static-reg.lximg.com/images/product_images/closeup_34208_SephoraCollection_UltraShineLipGel_01PerfectNude_WEB_a0ea7cca39eec787b338105af4ff4a85097902bf_1523780022.png",
-                "name": "Ultra Shine Lip Gel",
-                "price": 19,
-                "title": undefined,
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": <ProductCard
-                brand="My Awesome Brand"
-                image="https://static-reg.lximg.com/images/product_images/closeup_34208_SephoraCollection_UltraShineLipGel_01PerfectNude_WEB_a0ea7cca39eec787b338105af4ff4a85097902bf_1523780022.png"
-                name="Awesome Name"
-                price={91}
-              />,
-              "className": "product-card-link",
-              "replace": false,
-              "to": Object {
-                "pathname": "/product/undefined",
-                "state": Object {
-                  "product": Object {
-                    "brand": "My Awesome Brand",
-                    "description": "Awesome Description",
-                    "image": "https://static-reg.lximg.com/images/product_images/closeup_34208_SephoraCollection_UltraShineLipGel_01PerfectNude_WEB_a0ea7cca39eec787b338105af4ff4a85097902bf_1523780022.png",
-                    "name": "Awesome Name",
-                    "price": 91,
-                  },
-                },
-              },
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "brand": "My Awesome Brand",
-                "image": "https://static-reg.lximg.com/images/product_images/closeup_34208_SephoraCollection_UltraShineLipGel_01PerfectNude_WEB_a0ea7cca39eec787b338105af4ff4a85097902bf_1523780022.png",
-                "name": "Awesome Name",
-                "price": 91,
-                "title": undefined,
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            "type": [Function],
-          },
-        ],
-        "type": "div",
-      },
-    ],
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
+    "rendered": Object {
       "instance": null,
       "key": undefined,
       "nodeType": "host",
@@ -285,7 +128,7 @@ ShallowWrapper {
                 }
               }
             >
-              <ProductCard
+              <WithStyles(ProductCard)
                 brand="Sephora Collection"
                 image="https://static-reg.lximg.com/images/product_images/closeup_34208_SephoraCollection_UltraShineLipGel_01PerfectNude_WEB_a0ea7cca39eec787b338105af4ff4a85097902bf_1523780022.png"
                 name="Ultra Shine Lip Gel"
@@ -310,7 +153,7 @@ ShallowWrapper {
                 }
               }
             >
-              <ProductCard
+              <WithStyles(ProductCard)
                 brand="My Awesome Brand"
                 image="https://static-reg.lximg.com/images/product_images/closeup_34208_SephoraCollection_UltraShineLipGel_01PerfectNude_WEB_a0ea7cca39eec787b338105af4ff4a85097902bf_1523780022.png"
                 name="Awesome Name"
@@ -319,7 +162,7 @@ ShallowWrapper {
             </Link>
           </div>,
         ],
-        "className": "product-showcase-wrapper",
+        "className": "product-showcase",
       },
       "ref": null,
       "rendered": Array [
@@ -348,7 +191,7 @@ ShallowWrapper {
                   }
                 }
               >
-                <ProductCard
+                <WithStyles(ProductCard)
                   brand="Sephora Collection"
                   image="https://static-reg.lximg.com/images/product_images/closeup_34208_SephoraCollection_UltraShineLipGel_01PerfectNude_WEB_a0ea7cca39eec787b338105af4ff4a85097902bf_1523780022.png"
                   name="Ultra Shine Lip Gel"
@@ -373,7 +216,7 @@ ShallowWrapper {
                   }
                 }
               >
-                <ProductCard
+                <WithStyles(ProductCard)
                   brand="My Awesome Brand"
                   image="https://static-reg.lximg.com/images/product_images/closeup_34208_SephoraCollection_UltraShineLipGel_01PerfectNude_WEB_a0ea7cca39eec787b338105af4ff4a85097902bf_1523780022.png"
                   name="Awesome Name"
@@ -390,7 +233,7 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "children": <ProductCard
+                "children": <WithStyles(ProductCard)
                   brand="Sephora Collection"
                   image="https://static-reg.lximg.com/images/product_images/closeup_34208_SephoraCollection_UltraShineLipGel_01PerfectNude_WEB_a0ea7cca39eec787b338105af4ff4a85097902bf_1523780022.png"
                   name="Ultra Shine Lip Gel"
@@ -435,7 +278,7 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "children": <ProductCard
+                "children": <WithStyles(ProductCard)
                   brand="My Awesome Brand"
                   image="https://static-reg.lximg.com/images/product_images/closeup_34208_SephoraCollection_UltraShineLipGel_01PerfectNude_WEB_a0ea7cca39eec787b338105af4ff4a85097902bf_1523780022.png"
                   name="Awesome Name"
@@ -478,6 +321,301 @@ ShallowWrapper {
           "type": "div",
         },
       ],
+      "type": "div",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="product-showcase"
+        >
+          <div
+            className="product-showcase-row"
+          >
+            <Link
+              className="product-card-link"
+              replace={false}
+              to={
+                Object {
+                  "pathname": "/product/undefined",
+                  "state": Object {
+                    "product": Object {
+                      "brand": "Sephora Collection",
+                      "description": "A gel lip gloss with plumped-up, light-reflecting shine.
+",
+                      "image": "https://static-reg.lximg.com/images/product_images/closeup_34208_SephoraCollection_UltraShineLipGel_01PerfectNude_WEB_a0ea7cca39eec787b338105af4ff4a85097902bf_1523780022.png",
+                      "name": "Ultra Shine Lip Gel",
+                      "price": 19,
+                    },
+                  },
+                }
+              }
+            >
+              <WithStyles(ProductCard)
+                brand="Sephora Collection"
+                image="https://static-reg.lximg.com/images/product_images/closeup_34208_SephoraCollection_UltraShineLipGel_01PerfectNude_WEB_a0ea7cca39eec787b338105af4ff4a85097902bf_1523780022.png"
+                name="Ultra Shine Lip Gel"
+                price={19}
+              />
+            </Link>
+            <Link
+              className="product-card-link"
+              replace={false}
+              to={
+                Object {
+                  "pathname": "/product/undefined",
+                  "state": Object {
+                    "product": Object {
+                      "brand": "My Awesome Brand",
+                      "description": "Awesome Description",
+                      "image": "https://static-reg.lximg.com/images/product_images/closeup_34208_SephoraCollection_UltraShineLipGel_01PerfectNude_WEB_a0ea7cca39eec787b338105af4ff4a85097902bf_1523780022.png",
+                      "name": "Awesome Name",
+                      "price": 91,
+                    },
+                  },
+                }
+              }
+            >
+              <WithStyles(ProductCard)
+                brand="My Awesome Brand"
+                image="https://static-reg.lximg.com/images/product_images/closeup_34208_SephoraCollection_UltraShineLipGel_01PerfectNude_WEB_a0ea7cca39eec787b338105af4ff4a85097902bf_1523780022.png"
+                name="Awesome Name"
+                price={91}
+              />
+            </Link>
+          </div>
+        </div>,
+        "className": "product-showcase-wrapper",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="product-showcase-row"
+            >
+              <Link
+                className="product-card-link"
+                replace={false}
+                to={
+                  Object {
+                    "pathname": "/product/undefined",
+                    "state": Object {
+                      "product": Object {
+                        "brand": "Sephora Collection",
+                        "description": "A gel lip gloss with plumped-up, light-reflecting shine.
+",
+                        "image": "https://static-reg.lximg.com/images/product_images/closeup_34208_SephoraCollection_UltraShineLipGel_01PerfectNude_WEB_a0ea7cca39eec787b338105af4ff4a85097902bf_1523780022.png",
+                        "name": "Ultra Shine Lip Gel",
+                        "price": 19,
+                      },
+                    },
+                  }
+                }
+              >
+                <WithStyles(ProductCard)
+                  brand="Sephora Collection"
+                  image="https://static-reg.lximg.com/images/product_images/closeup_34208_SephoraCollection_UltraShineLipGel_01PerfectNude_WEB_a0ea7cca39eec787b338105af4ff4a85097902bf_1523780022.png"
+                  name="Ultra Shine Lip Gel"
+                  price={19}
+                />
+              </Link>
+              <Link
+                className="product-card-link"
+                replace={false}
+                to={
+                  Object {
+                    "pathname": "/product/undefined",
+                    "state": Object {
+                      "product": Object {
+                        "brand": "My Awesome Brand",
+                        "description": "Awesome Description",
+                        "image": "https://static-reg.lximg.com/images/product_images/closeup_34208_SephoraCollection_UltraShineLipGel_01PerfectNude_WEB_a0ea7cca39eec787b338105af4ff4a85097902bf_1523780022.png",
+                        "name": "Awesome Name",
+                        "price": 91,
+                      },
+                    },
+                  }
+                }
+              >
+                <WithStyles(ProductCard)
+                  brand="My Awesome Brand"
+                  image="https://static-reg.lximg.com/images/product_images/closeup_34208_SephoraCollection_UltraShineLipGel_01PerfectNude_WEB_a0ea7cca39eec787b338105af4ff4a85097902bf_1523780022.png"
+                  name="Awesome Name"
+                  price={91}
+                />
+              </Link>
+            </div>,
+          ],
+          "className": "product-showcase",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <Link
+                  className="product-card-link"
+                  replace={false}
+                  to={
+                    Object {
+                      "pathname": "/product/undefined",
+                      "state": Object {
+                        "product": Object {
+                          "brand": "Sephora Collection",
+                          "description": "A gel lip gloss with plumped-up, light-reflecting shine.
+",
+                          "image": "https://static-reg.lximg.com/images/product_images/closeup_34208_SephoraCollection_UltraShineLipGel_01PerfectNude_WEB_a0ea7cca39eec787b338105af4ff4a85097902bf_1523780022.png",
+                          "name": "Ultra Shine Lip Gel",
+                          "price": 19,
+                        },
+                      },
+                    }
+                  }
+                >
+                  <WithStyles(ProductCard)
+                    brand="Sephora Collection"
+                    image="https://static-reg.lximg.com/images/product_images/closeup_34208_SephoraCollection_UltraShineLipGel_01PerfectNude_WEB_a0ea7cca39eec787b338105af4ff4a85097902bf_1523780022.png"
+                    name="Ultra Shine Lip Gel"
+                    price={19}
+                  />
+                </Link>,
+                <Link
+                  className="product-card-link"
+                  replace={false}
+                  to={
+                    Object {
+                      "pathname": "/product/undefined",
+                      "state": Object {
+                        "product": Object {
+                          "brand": "My Awesome Brand",
+                          "description": "Awesome Description",
+                          "image": "https://static-reg.lximg.com/images/product_images/closeup_34208_SephoraCollection_UltraShineLipGel_01PerfectNude_WEB_a0ea7cca39eec787b338105af4ff4a85097902bf_1523780022.png",
+                          "name": "Awesome Name",
+                          "price": 91,
+                        },
+                      },
+                    }
+                  }
+                >
+                  <WithStyles(ProductCard)
+                    brand="My Awesome Brand"
+                    image="https://static-reg.lximg.com/images/product_images/closeup_34208_SephoraCollection_UltraShineLipGel_01PerfectNude_WEB_a0ea7cca39eec787b338105af4ff4a85097902bf_1523780022.png"
+                    name="Awesome Name"
+                    price={91}
+                  />
+                </Link>,
+              ],
+              "className": "product-showcase-row",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <WithStyles(ProductCard)
+                    brand="Sephora Collection"
+                    image="https://static-reg.lximg.com/images/product_images/closeup_34208_SephoraCollection_UltraShineLipGel_01PerfectNude_WEB_a0ea7cca39eec787b338105af4ff4a85097902bf_1523780022.png"
+                    name="Ultra Shine Lip Gel"
+                    price={19}
+                  />,
+                  "className": "product-card-link",
+                  "replace": false,
+                  "to": Object {
+                    "pathname": "/product/undefined",
+                    "state": Object {
+                      "product": Object {
+                        "brand": "Sephora Collection",
+                        "description": "A gel lip gloss with plumped-up, light-reflecting shine.
+",
+                        "image": "https://static-reg.lximg.com/images/product_images/closeup_34208_SephoraCollection_UltraShineLipGel_01PerfectNude_WEB_a0ea7cca39eec787b338105af4ff4a85097902bf_1523780022.png",
+                        "name": "Ultra Shine Lip Gel",
+                        "price": 19,
+                      },
+                    },
+                  },
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "brand": "Sephora Collection",
+                    "image": "https://static-reg.lximg.com/images/product_images/closeup_34208_SephoraCollection_UltraShineLipGel_01PerfectNude_WEB_a0ea7cca39eec787b338105af4ff4a85097902bf_1523780022.png",
+                    "name": "Ultra Shine Lip Gel",
+                    "price": 19,
+                    "title": undefined,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <WithStyles(ProductCard)
+                    brand="My Awesome Brand"
+                    image="https://static-reg.lximg.com/images/product_images/closeup_34208_SephoraCollection_UltraShineLipGel_01PerfectNude_WEB_a0ea7cca39eec787b338105af4ff4a85097902bf_1523780022.png"
+                    name="Awesome Name"
+                    price={91}
+                  />,
+                  "className": "product-card-link",
+                  "replace": false,
+                  "to": Object {
+                    "pathname": "/product/undefined",
+                    "state": Object {
+                      "product": Object {
+                        "brand": "My Awesome Brand",
+                        "description": "Awesome Description",
+                        "image": "https://static-reg.lximg.com/images/product_images/closeup_34208_SephoraCollection_UltraShineLipGel_01PerfectNude_WEB_a0ea7cca39eec787b338105af4ff4a85097902bf_1523780022.png",
+                        "name": "Awesome Name",
+                        "price": 91,
+                      },
+                    },
+                  },
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "brand": "My Awesome Brand",
+                    "image": "https://static-reg.lximg.com/images/product_images/closeup_34208_SephoraCollection_UltraShineLipGel_01PerfectNude_WEB_a0ea7cca39eec787b338105af4ff4a85097902bf_1523780022.png",
+                    "name": "Awesome Name",
+                    "price": 91,
+                    "title": undefined,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
       "type": "div",
     },
   ],

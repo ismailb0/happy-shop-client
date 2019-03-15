@@ -10,12 +10,17 @@
 
 .product-showcase-row {
   display: flex;
-  margin: 2vh 0;
-  height: 45%;
+  margin: 2% 0;
+  height: 50%;
   width: 96%;
 }
 
 .product-card-link {
-  text-decoration: none;
   color: black;
+  height: 100%;
+  text-decoration: none;
+}
+
+.product-showcase {
+  height: 100%;
 }

@@ -3,7 +3,7 @@
 exports[`<ProductCard /> should match snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <ProductCard
+  Symbol(enzyme.__unrendered__): <WithStyles(ProductCard)
     brand="testBrand"
     image="testImage.jpg"
     name="testName"
@@ -23,110 +23,16 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "children": Array [
-        <WithStyles(CardMedia)
-          className="card-media"
-          image="testImage.jpg"
-          title="testName"
-        />,
-        <div
-          className="card-content"
-        >
-          <div
-            className="product-brand"
-          >
-            testBrand
-          </div>
-          <div>
-            testName
-          </div>
-          <div
-            className="product-price"
-          >
-            $59.82
-          </div>
-        </div>,
-      ],
-      "className": "product-card",
+      "brand": "testBrand",
+      "classes": Object {
+        "media": "ProductCard-media-1",
+      },
+      "image": "testImage.jpg",
+      "name": "testName",
+      "price": 59.82,
     },
     "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "className": "card-media",
-          "image": "testImage.jpg",
-          "title": "testName",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            <div
-              className="product-brand"
-            >
-              testBrand
-            </div>,
-            <div>
-              testName
-            </div>,
-            <div
-              className="product-price"
-            >
-              $59.82
-            </div>,
-          ],
-          "className": "card-content",
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "testBrand",
-              "className": "product-brand",
-            },
-            "ref": null,
-            "rendered": "testBrand",
-            "type": "div",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "testName",
-            },
-            "ref": null,
-            "rendered": "testName",
-            "type": "div",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "$59.82",
-              "className": "product-price",
-            },
-            "ref": null,
-            "rendered": "$59.82",
-            "type": "div",
-          },
-        ],
-        "type": "div",
-      },
-    ],
+    "rendered": null,
     "type": [Function],
   },
   Symbol(enzyme.__nodes__): Array [
@@ -135,110 +41,16 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "children": Array [
-          <WithStyles(CardMedia)
-            className="card-media"
-            image="testImage.jpg"
-            title="testName"
-          />,
-          <div
-            className="card-content"
-          >
-            <div
-              className="product-brand"
-            >
-              testBrand
-            </div>
-            <div>
-              testName
-            </div>
-            <div
-              className="product-price"
-            >
-              $59.82
-            </div>
-          </div>,
-        ],
-        "className": "product-card",
+        "brand": "testBrand",
+        "classes": Object {
+          "media": "ProductCard-media-1",
+        },
+        "image": "testImage.jpg",
+        "name": "testName",
+        "price": 59.82,
       },
       "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "className": "card-media",
-            "image": "testImage.jpg",
-            "title": "testName",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <div
-                className="product-brand"
-              >
-                testBrand
-              </div>,
-              <div>
-                testName
-              </div>,
-              <div
-                className="product-price"
-              >
-                $59.82
-              </div>,
-            ],
-            "className": "card-content",
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "testBrand",
-                "className": "product-brand",
-              },
-              "ref": null,
-              "rendered": "testBrand",
-              "type": "div",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "testName",
-              },
-              "ref": null,
-              "rendered": "testName",
-              "type": "div",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "$59.82",
-                "className": "product-price",
-              },
-              "ref": null,
-              "rendered": "$59.82",
-              "type": "div",
-            },
-          ],
-          "type": "div",
-        },
-      ],
+      "rendered": null,
       "type": [Function],
     },
   ],

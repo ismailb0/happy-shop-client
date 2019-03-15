@@ -57,7 +57,9 @@ class ProductShowcase extends Component {
   render() {
     return (
       <div className='product-showcase-wrapper'>
-        {this.getProductCards()}
+        <div className='product-showcase'>
+          {this.getProductCards()}
+        </div>
       </div>
     );
   }
